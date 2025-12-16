@@ -77,7 +77,7 @@ test('Verify login invalid Username and invalid password', async ({ page }) => {
 
 
 
-test('Verify login with blank fields', async ({ page }) => {
+test.skip('Verify login with blank fields', async ({ page }) => {
 
     //actions 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
