@@ -30,7 +30,7 @@ test('Verify login with valid credentials', async ({ page }) => {
 test('Verify login valid Username and Invalid password', async ({ page }) => {
 
     //actions 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    await page.goto('/web/index.php/auth/login')
 
     await page.locator("input[name='username']").fill("Admin")
 
@@ -46,7 +46,7 @@ test('Verify login valid Username and Invalid password', async ({ page }) => {
 test('Verify login invalid Username and valid password', async ({ page }) => {
 
     //actions 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    await page.goto('/web/index.php/auth/login')
 
     await page.locator("input[name='username']").fill("Adjhbgfhmin")
 
