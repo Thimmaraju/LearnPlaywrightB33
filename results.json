@@ -39,44 +39,12 @@
       {
         "outputDir": "D:/LearnPlaywrightB33/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 3,
         "metadata": {
           "actualWorkers": 1
         },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "D:/LearnPlaywrightB33/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 40000
-      },
-      {
-        "outputDir": "D:/LearnPlaywrightB33/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "D:/LearnPlaywrightB33/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 40000
-      },
-      {
-        "outputDir": "D:/LearnPlaywrightB33/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "webkit",
-        "name": "webkit",
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
         "testDir": "D:/LearnPlaywrightB33/tests",
         "testIgnore": [],
         "testMatch": [
@@ -88,20 +56,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "swaglabs.spec.js",
-      "file": "swaglabs.spec.js",
+      "title": "login.spec.js",
+      "file": "login.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify login to Swaglabs using Locked out User  ",
+          "title": "Verify logo visibility",
           "ok": true,
           "tags": [],
           "tests": [
@@ -109,25 +77,35 @@
               "timeout": 40000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2276,
+                  "duration": 5267,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-17T05:23:05.766Z",
+                  "startTime": "2025-12-18T05:03:58.689Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\swaglabs-Verify-login-to-Swaglabs-using-Locked-out-User--chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-logo-visibility-Microsoft-Edge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-logo-visibility-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-logo-visibility-Microsoft-Edge\\trace.zip"
                     }
                   ]
                 }
@@ -135,9 +113,514 @@
               "status": "expected"
             }
           ],
-          "id": "8f0c16a883c5bf566337-3050723f290bf99c802a",
-          "file": "swaglabs.spec.js",
-          "line": 42,
+          "id": "badc1754af1944f68b2b-0cfb720618b5aa654960",
+          "file": "login.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Verify login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:04.682Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-with-valid-credentials-Microsoft-Edge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-with-valid-credentials-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-with-valid-credentials-Microsoft-Edge\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-d6dc05f260fe8e74edac",
+          "file": "login.spec.js",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "Verify login valid Username and Invalid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:12.460Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-valid-Username-and-Invalid-password-Microsoft-Edge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-valid-Username-and-Invalid-password-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-valid-Username-and-Invalid-password-Microsoft-Edge\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-c273b25697b39b2ef5b7",
+          "file": "login.spec.js",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "title": "Verify login invalid Username and valid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:19.274Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-valid-password-Microsoft-Edge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-valid-password-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-valid-password-Microsoft-Edge\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-5ab2fface1136bdc31cd",
+          "file": "login.spec.js",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "Verify login invalid Username and invalid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9688,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:26.079Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-invalid-password-Microsoft-Edge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-invalid-password-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-invalid-Username-and-invalid-password-Microsoft-Edge\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-e39a8c861d15d7151cf6",
+          "file": "login.spec.js",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Verify login with blank fields",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                    "line": 81,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:36.188Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "line": 81,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-0dbd8ace397b664d2f54",
+          "file": "login.spec.js",
+          "line": 81,
+          "column": 6
+        },
+        {
+          "title": "Local Apps test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5224,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                      "column": 16,
+                      "line": 101
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "column": 16,
+                        "line": 101
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-18T05:04:36.188Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                    "column": 16,
+                    "line": 101
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6895,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                      "column": 16,
+                      "line": 101
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "column": 16,
+                        "line": 101
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-12-18T05:04:47.300Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                    "column": 16,
+                    "line": 101
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6233,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                      "column": 16,
+                      "line": 101
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "column": 16,
+                        "line": 101
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2025-12-18T05:05:02.052Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry2\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry2\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                    "column": 16,
+                    "line": 101
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3748,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                      "column": 16,
+                      "line": 101
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "column": 16,
+                        "line": 101
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  99 |\u001b[39m\n \u001b[90m 100 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/'\u001b[39m)\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m20000\u001b[39m)\n \u001b[90m 104 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:101:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 3,
+                  "startTime": "2025-12-18T05:05:12.172Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry3\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry3\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry3\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Local-Apps-test-Microsoft-Edge-retry3\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                    "column": 16,
+                    "line": 101
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-bbbc60d3357f3973a8ad",
+          "file": "login.spec.js",
+          "line": 98,
           "column": 5
         }
       ]
@@ -145,11 +628,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-17T05:23:00.720Z",
-    "duration": 7506.080999999991,
-    "expected": 1,
-    "skipped": 0,
-    "unexpected": 0,
+    "startTime": "2025-12-18T05:03:56.848Z",
+    "duration": 80390.019,
+    "expected": 5,
+    "skipped": 1,
+    "unexpected": 1,
     "flaky": 0
   }
 }

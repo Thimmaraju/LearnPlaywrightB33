@@ -22,6 +22,7 @@ test('Verify login with valid credentials', async ({ page }) => {
 
    await expect(page.locator("//span[text()='PIM']")).toBeVisible()
 
+   await page.locator('//a[@href="/web/index.php/pim/viewPimModule"]').click()
 
 });
 
@@ -94,3 +95,10 @@ test.skip('Verify login with blank fields', async ({ page }) => {
 });
 
 
+test("Local Apps test", async ({page}) => {
+
+
+    await page.goto('http://localhost:3000/')
+
+    await page.waitForTimeout(20000)
+})
