@@ -19,7 +19,7 @@ test("Verify login to Swaglabs using valid credentials", async ({page}) => {
 
     await page.locator("input[type='submit']").click()
 
-    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html/')
+    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
 
 })
 
