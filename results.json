@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "loginautopractice.spec.js",
+      "file": "loginautopractice.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify login valid Username and Invalid password",
+          "title": "Verify Login to Automation Practice site ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5031,
+                  "duration": 11489,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-22T05:17:37.334Z",
+                  "startTime": "2025-12-23T04:23:01.202Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\login-Verify-login-valid-Username-and-Invalid-password-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\loginautopractice-Verify-Login-to-Automation-Practice-site--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,9 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "badc1754af1944f68b2b-0bafc6ca909c7d547021",
-          "file": "login.spec.js",
-          "line": 33,
+          "id": "6fbbea35f84bb27a8fee-6dcd784c0e6c0afb20f6",
+          "file": "loginautopractice.spec.js",
+          "line": 3,
           "column": 5
         }
       ]
@@ -161,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-22T05:17:33.423Z",
-    "duration": 9119.325000000186,
+    "startTime": "2025-12-23T04:22:56.170Z",
+    "duration": 18237.641,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
