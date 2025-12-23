@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+import logindata from "../testData/login.json"
+
 test('Verify logo visibility', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await expect(page.getByRole('img', { name: 'company-branding' })).toBeVisible();
@@ -12,9 +14,9 @@ test('Verify login with valid credentials', async ({ page }) => {
     //actions 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill("Admin")
+    await page.locator("input[name='username']").fill(logindata.username)
 
-    await page.locator("//input[@placeholder='Password']").fill("admin123")
+    await page.locator("//input[@placeholder='Password']").fill(logindata.password)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
 
@@ -33,9 +35,9 @@ test('Verify login valid Username and Invalid password', async ({ page }) => {
     //actions 
     await page.goto('/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill("Admin")
+    await page.locator("input[name='username']").fill(logindata.username)
 
-    await page.locator("//input[@placeholder='Password']").fill("efgverhgvyugher")
+    await page.locator("//input[@placeholder='Password']").fill(logindata.wrongpassword)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
    
@@ -49,9 +51,9 @@ test('Verify login invalid Username and valid password', async ({ page }) => {
     //actions 
     await page.goto('/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill("Adjhbgfhmin")
+    await page.locator("input[name='username']").fill(logindata.wrongUsername)
 
-    await page.locator("//input[@placeholder='Password']").fill("admin123")
+    await page.locator("//input[@placeholder='Password']").fill(logindata.password)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
    
@@ -65,9 +67,9 @@ test('Verify login invalid Username and invalid password', async ({ page }) => {
     //actions 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill("Adjhbgfhmin")
+    await page.locator("input[name='username']").fill(logindata.wrongUsername)
 
-    await page.locator("//input[@placeholder='Password']").fill("sfvdfv")
+    await page.locator("//input[@placeholder='Password']").fill(logindata.wrongpassword)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
    
