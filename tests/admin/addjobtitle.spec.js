@@ -2,6 +2,8 @@ import { test, expect } from '@playwright/test';
 import addjobtitledata from "../../testData/Admin/addjobtitle.json"
 import logindata from "../../testData/login.json"
 
+import { faker } from '@faker-js/faker';
+
 test('Verify Add Job title functionality', async ({ page }) => {
 
     await page.goto('/web/index.php/auth/login')
@@ -22,7 +24,12 @@ test('Verify Add Job title functionality', async ({ page }) => {
 
    await page.locator("//button[contains(.,'Add')]").click()
 
-   await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(addjobtitledata.jobtitle)
+   const randomchars = (Math.random() + 1).toString(36).substring(7);
+
+   const title = faker.person.jobTitle()
+
+   console.log(title)
+   await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(title)
 
    await page.locator("//textarea[@placeholder='Type description here']").pressSequentially(addjobtitledata.jobDescritption, {delay:500})
 
