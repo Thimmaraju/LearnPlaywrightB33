@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "admin\\addjobtitle.spec.js",
-      "file": "admin/addjobtitle.spec.js",
+      "title": "redif_register.spec.js",
+      "file": "redif_register.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Add Job title functionality",
+          "title": "Verify Register flow ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,25 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 10,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 26609,
+                  "duration": 1393,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "National Infrastructure Designer\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-23T05:21:24.977Z",
+                  "startTime": "2025-12-24T04:20:50.892Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\admin-addjobtitle-Verify-Add-Job-title-functionality-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -155,9 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "f5b1bc4c1971ae9939ad-363978c4811d9faa897d",
-          "file": "admin/addjobtitle.spec.js",
-          "line": 7,
+          "id": "caa01047290a207a2211-0f3aa387605ce9367c90",
+          "file": "redif_register.spec.js",
+          "line": 4,
           "column": 5
         }
       ]
@@ -165,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-23T05:21:17.703Z",
-    "duration": 34076.82700000005,
+    "startTime": "2025-12-24T04:20:47.034Z",
+    "duration": 5481.804000000004,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
