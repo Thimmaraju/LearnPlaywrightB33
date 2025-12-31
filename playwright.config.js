@@ -39,7 +39,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
     headless : true,
-    //testIdAttribute: "name"
+    testIdAttribute: "name",
     baseURL: "https://opensource-demo.orangehrmlive.com",
     screenshot: "on",
     video: "on",
