@@ -19,9 +19,9 @@ test('Verify Add Employee functionality', async ({ page }) => {
 
   //await page.getByRole('button', {name : "Submit"}).click()
 
-  await page.getByRole('textbox', { name: 'First Name' }).fill(faker.person.firstName());
+  await page.getByRole('textbox', { name: 'First Name' }).fill("Madhukar");
 
-  await page.getByRole('textbox', { name: 'Last Name' }).fill(faker.person.lastName());
+  await page.getByRole('textbox', { name: 'Last Name' }).fill("B");
  
   await page.getByRole('textbox').nth(4).fill(faker.string.alpha(5));
 
@@ -29,3 +29,4 @@ test('Verify Add Employee functionality', async ({ page }) => {
 
   await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
 });
+
