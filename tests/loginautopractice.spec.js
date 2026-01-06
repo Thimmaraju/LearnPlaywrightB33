@@ -10,6 +10,6 @@ test("Verify Login to Automation Practice site ", async ({page}) => {
 
     await page.locator('//button[@data-qa="login-button"]').click()
     
-    await expect(page.locator('//a[@href="/logout"]')).toBeVisible()
+    await expect(page.locator("//a[@href='/logout']")).toBeVisible()
 
 })
