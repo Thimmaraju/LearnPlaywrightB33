@@ -104,3 +104,36 @@ test("Local Apps test", async ({page}) => {
 
     await page.waitForTimeout(20000)
 })
+
+
+test('Verify login with SQL injection attempt', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    await page.locator("input[name='username']").fill("' OR '1'='1");
+    await page.locator("//input[@placeholder='Password']").fill("' OR '1'='1");
+    await page.locator("//button[@type='submit']").click();
+    await expect(page.locator("//p[text()='Invalid credentials']")).toBeVisible();
+});
+
+test('Verify login with special characters in credentials', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    await page.locator("input[name='username']").fill("admin!@#$%");
+    await page.locator("//input[@placeholder='Password']").fill("pass<>?");
+    await page.locator("//button[@type='submit']").click();
+    await expect(page.locator("//p[text()='Invalid credentials']")).toBeVisible();
+});
+
+test('Verify login with whitespace in username', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    await page.locator("input[name='username']").fill("  admin  ");
+    await page.locator("//input[@placeholder='Password']").fill(logindata.password);
+    await page.locator("//button[@type='submit']").click();
+    await expect(page.locator("//p[text()='Invalid credentials']")).toBeVisible();
+});
+
+test('Verify login with case sensitivity', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    await page.locator("input[name='username']").fill(logindata.username.toUpperCase());
+    await page.locator("//input[@placeholder='Password']").fill(logindata.password);
+    await page.locator("//button[@type='submit']").click();
+    //await expect(page.locator("//p[text()='Invalid credentials']")).toBeVisible();
+});

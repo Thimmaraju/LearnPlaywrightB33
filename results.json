@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "conditionaltestex2.spec.js",
-      "file": "conditionaltestex2.spec.js",
+      "title": "PIM\\functionex.spec.js",
+      "file": "PIM/functionex.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Based on BrowserName run different script - don env ",
+          "title": "Verify Register flow ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7854,
+                  "duration": 3499,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-09T05:19:34.395Z",
+                  "startTime": "2026-01-10T05:34:38.646Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\conditionaltestex2-Based-o-9602c-different-script---don-env--Microsoft-Edge\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\PIM-functionex-Verify-Register-flow--Microsoft-Edge\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,9 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "391acd26c5fa6339be32-87c47ed084af7fd2fbdd",
-          "file": "conditionaltestex2.spec.js",
-          "line": 42,
+          "id": "ed4f45eac7424a14264a-68892c4f31057b662cb1",
+          "file": "PIM/functionex.spec.js",
+          "line": 11,
           "column": 5
         }
       ]
@@ -161,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-09T05:19:29.009Z",
-    "duration": 13588.650999999998,
+    "startTime": "2026-01-10T05:34:33.778Z",
+    "duration": 8873.833000000566,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

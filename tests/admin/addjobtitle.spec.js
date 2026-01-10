@@ -2,7 +2,12 @@ import { test, expect } from '@playwright/test';
 import addjobtitledata from "../../testData/Admin/addjobtitle.json"
 import logindata from "../../testData/login.json"
 
-import { faker } from '@faker-js/faker';
+function generateRandomJobTitle() {
+    const randomchars = (Math.random() + 1).toString(36).substring(7);
+    return `JobTitle_${randomchars}`;
+}
+
+const title = generateRandomJobTitle();
 
 test('Verify Add Job title functionality', async ({ page }) => {
 
@@ -26,10 +31,7 @@ test('Verify Add Job title functionality', async ({ page }) => {
 
    const randomchars = (Math.random() + 1).toString(36).substring(7);
 
-   const title = faker.person.jobTitle()
-
-   console.log(title)
-   await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(title)
+   await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(generateRandomJobTitle())
 
    await page.locator("//textarea[@placeholder='Type description here']").pressSequentially(addjobtitledata.jobDescritption, {delay:500})
 
