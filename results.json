@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "PIM\\functionex.spec.js",
-      "file": "PIM/functionex.spec.js",
+      "title": "datadriventestingex2.spec.js",
+      "file": "datadriventestingex2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Register flow ",
+          "title": "Verify Add Employee functionality - Raju",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3499,
+                  "duration": 21334,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-10T05:34:38.646Z",
+                  "startTime": "2026-01-12T04:56:13.790Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\PIM-functionex-Verify-Register-flow--Microsoft-Edge\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadriventestingex2-Verif-48825-ployee-functionality---Raju-Microsoft-Edge\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,19 +151,99 @@
               "status": "expected"
             }
           ],
-          "id": "ed4f45eac7424a14264a-68892c4f31057b662cb1",
-          "file": "PIM/functionex.spec.js",
-          "line": 11,
-          "column": 5
+          "id": "bc5e10afbe8ea5d944e6-44aae3c61db37c6daf77",
+          "file": "datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Employee functionality - Lakshmi",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:56:35.375Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadriventestingex2-Verif-e8fc1-yee-functionality---Lakshmi-Microsoft-Edge\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc5e10afbe8ea5d944e6-99645f56b588ee699535",
+          "file": "datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Employee functionality - Praveen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21727,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:56:56.298Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadriventestingex2-Verif-be192-yee-functionality---Praveen-Microsoft-Edge\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc5e10afbe8ea5d944e6-7e771e44ebb7aab9cb7c",
+          "file": "datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-10T05:34:33.778Z",
-    "duration": 8873.833000000566,
-    "expected": 1,
+    "startTime": "2026-01-12T04:56:07.179Z",
+    "duration": 71030.65299999993,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

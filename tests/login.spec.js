@@ -2,6 +2,14 @@ import { test, expect } from '@playwright/test';
 
 import logindata from "../testData/login.json"
 
+let credentials = {
+
+    username: "Admin",
+    password : "admin123",
+    invalidusername: "kjehrhbfhbr",
+ 
+}
+
 test('Verify logo visibility', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await expect(page.getByRole('img', { name: 'company-branding' })).toBeVisible();
@@ -14,9 +22,9 @@ test('Verify login with valid credentials', async ({ page }) => {
     //actions 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill(logindata.username)
+    await page.locator("input[name='username']").fill(credentials['Username'])
 
-    await page.locator("//input[@placeholder='Password']").fill(logindata.password)
+    await page.locator("//input[@placeholder='Password']").fill(credentials.password)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
 
@@ -32,12 +40,13 @@ test('Verify login with valid credentials', async ({ page }) => {
 
 test('Verify login valid Username and Invalid password', async ({ page }) => {
 
+    credentials['invalidpassword'] = "nerfkjnrf"
     //actions 
     await page.goto('/web/index.php/auth/login')
 
     await page.locator("input[name='username']").fill(logindata.username)
 
-    await page.locator("//input[@placeholder='Password']").fill(logindata.wrongpassword)
+    await page.locator("//input[@placeholder='Password']").fill(credentials.invalidpassword)
     await page.locator("//button[@type='submit']").click()
    // assertion - validation
    
