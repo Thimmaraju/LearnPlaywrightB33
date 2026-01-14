@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "datadrivenarray.spec.js",
-      "file": "datadrivenarray.spec.js",
+      "title": "admin\\addjobtitle.spec.js",
+      "file": "admin/addjobtitle.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Add Job title functionality - QA Analyst II",
+          "title": "Verify Add Job title functionality",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 13,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 29567,
+                  "duration": 25095,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-13T05:01:07.235Z",
+                  "startTime": "2026-01-14T05:15:41.144Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadrivenarray-Verify-Add-ab3cc-nctionality---QA-Analyst-II-Microsoft-Edge\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\admin-addjobtitle-Verify-Add-Job-title-functionality-Microsoft-Edge\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,139 +151,19 @@
               "status": "expected"
             }
           ],
-          "id": "27ce302d0d71150b6857-4a3f43ee762870b24593",
-          "file": "datadrivenarray.spec.js",
+          "id": "f5b1bc4c1971ae9939ad-9e014e7ea4d83bbc22a8",
+          "file": "admin/addjobtitle.spec.js",
           "line": 12,
-          "column": 9
-        },
-        {
-          "title": "Verify Add Job title functionality - SDET II",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 27984,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-13T05:01:36.979Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadrivenarray-Verify-Add-Job-title-functionality---SDET-II-Microsoft-Edge\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "27ce302d0d71150b6857-3c9035e853a9181ebb7c",
-          "file": "datadrivenarray.spec.js",
-          "line": 12,
-          "column": 9
-        },
-        {
-          "title": "Verify Add Job title functionality - Software test Engineer II",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 30131,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-13T05:02:05.021Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadrivenarray-Verify-Add-34844---Software-test-Engineer-II-Microsoft-Edge\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "27ce302d0d71150b6857-743cba90262153995b40",
-          "file": "datadrivenarray.spec.js",
-          "line": 12,
-          "column": 9
-        },
-        {
-          "title": "Verify Add Job title functionality - QA Engineer II",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 40045,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-13T05:02:35.186Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\datadrivenarray-Verify-Add-793cd-ctionality---QA-Engineer-II-Microsoft-Edge\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "27ce302d0d71150b6857-b47c2b1eb5a9f8dfb324",
-          "file": "datadrivenarray.spec.js",
-          "line": 12,
-          "column": 9
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-13T05:01:02.899Z",
-    "duration": 132481.16900000023,
-    "expected": 4,
+    "startTime": "2026-01-14T05:15:37.374Z",
+    "duration": 29186.73499999987,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

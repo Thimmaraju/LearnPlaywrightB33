@@ -33,7 +33,7 @@ test('Verify Add Job title functionality', async ({ page }) => {
 
    await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(generateRandomJobTitle())
 
-   await page.locator("//textarea[@placeholder='Type description here']").pressSequentially(addjobtitledata.jobDescritption, {delay:500})
+   await page.locator("//textarea[@placeholder='Type description here']").pressSequentially("Analyzing requirement \nBug reporting \nBug Tracking \nAutomation Using Playwright")
 
    await page.locator("//input[@type='file']").setInputFiles('testData/AI-QA.png')
 
