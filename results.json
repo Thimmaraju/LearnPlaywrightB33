@@ -129,15 +129,15 @@
               "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 13,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 25095,
+                  "duration": 37188,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-14T05:15:41.144Z",
+                  "startTime": "2026-01-14T16:27:50.368Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -161,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-14T05:15:37.374Z",
-    "duration": 29186.73499999987,
+    "startTime": "2026-01-14T16:27:47.088Z",
+    "duration": 42244.388999999996,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
