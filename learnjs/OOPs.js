@@ -55,6 +55,11 @@ stu1.studentdetails() // getter
 // Encapsulation 
 
 
-// Inheritance 
+// Inheritance
 
 //2 classes 
+
+//  single 
+//  Multi level 
+//  Hirarchical 
+//  Multiple  -- Not supported 

@@ -1,7 +1,7 @@
 
 import { test, expect } from '@playwright/test';
 
-test("Verify Register flow ", async ({page}) => {
+test("Verify Register flow ", {tag : "@important"}, async ({page}) => {
 
     await page.goto('https://register.rediff.com/register/register.php?FormName=user_details')
 

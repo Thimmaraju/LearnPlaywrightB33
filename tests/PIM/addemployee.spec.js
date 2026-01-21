@@ -6,10 +6,10 @@ import logindata from "../../testData/login.json"
 
 import { faker } from '@faker-js/faker';
 
-for (let count = 1; count <= 10; count++) {
+//for (let count = 1; count <= 10; count++) {
 
 
-  test(`Verify Add Employee functionality - ${count}`, async ({ page }) => {
+  test(`Verify Add Employee functionality `,{tag: "@smoke"}, async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
     await page.getByRole('textbox', { name: 'Username' }).fill(logindata.username);
@@ -39,7 +39,7 @@ for (let count = 1; count <= 10; count++) {
 
  
   });
-}
+//}
 
 
 

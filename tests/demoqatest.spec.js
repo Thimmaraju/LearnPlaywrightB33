@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 let username = "Raju G"
 
-test('verify Edit boxes', async ({ page }) => {
+test('verify Edit boxes',{tag: "@smoke"}, async ({ page }) => {
 
 
   await page.goto('https://demoqa.com/');

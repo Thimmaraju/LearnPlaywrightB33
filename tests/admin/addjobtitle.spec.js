@@ -11,9 +11,9 @@ const title = generateRandomJobTitle();
 
 test('Verify Add Job title functionality', async ({ page }) => {
 
-    await page.goto('/web/index.php/auth/login')
+    await  page.goto('/web/index.php/auth/login')
 
-    await page.locator("input[name='username']").fill(logindata.username)
+    await  page.locator("input[name='username']").fill(logindata.username)
 
     await page.locator("//input[@placeholder='Password']").fill(logindata.password)
     await page.locator("//button[@type='submit']").click()

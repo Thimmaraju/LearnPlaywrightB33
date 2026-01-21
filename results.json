@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
@@ -57,7 +57,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "firefox",
         "name": "firefox",
@@ -73,7 +73,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "webkit",
         "name": "webkit",
@@ -89,7 +89,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
@@ -104,46 +104,167 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "admin\\addjobtitle.spec.js",
-      "file": "admin/addjobtitle.spec.js",
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login functionality ",
+          "file": "login.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify login with valid credentials",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "important"
+              ],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                        "line": 26,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 121546,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                            "column": 59,
+                            "line": 31
+                          },
+                          "message": "Error: locator.fill: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\\'usernamjghhgb\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m 30 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='usernamjghhgb']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@placeholder='Password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"admin123\"\u001b[39m)\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@type='submit']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:31:59\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-21T05:26:45.060Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
+                            "line": 26,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-2ebeb2caf2ccc98deb7d",
+              "file": "login.spec.js",
+              "line": 24,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "redif_register.spec.js",
+      "file": "redif_register.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Add Job title functionality",
+          "title": "Verify Register flow ",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "important"
+          ],
           "tests": [
             {
               "timeout": 40000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 37188,
+                  "duration": 3114,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-14T16:27:50.368Z",
+                  "startTime": "2026-01-21T05:26:44.855Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\admin-addjobtitle-Verify-Add-Job-title-functionality-Microsoft-Edge\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\trace.zip"
                     }
                   ]
                 }
@@ -151,9 +272,9 @@
               "status": "expected"
             }
           ],
-          "id": "f5b1bc4c1971ae9939ad-9e014e7ea4d83bbc22a8",
-          "file": "admin/addjobtitle.spec.js",
-          "line": 12,
+          "id": "caa01047290a207a2211-0f3aa387605ce9367c90",
+          "file": "redif_register.spec.js",
+          "line": 4,
           "column": 5
         }
       ]
@@ -161,11 +282,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-14T16:27:47.088Z",
-    "duration": 42244.388999999996,
+    "startTime": "2026-01-21T05:26:40.971Z",
+    "duration": 127679.99799999999,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

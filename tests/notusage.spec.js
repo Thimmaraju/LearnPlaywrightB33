@@ -8,10 +8,9 @@
 
 
 import { test, expect } from '@playwright/test';
-import { flushCompileCache } from 'module';
 
 
-test('Verify check box selection', async ({ page }) => {
+test('Verify check box selection',{tag: "@smoke"}, async ({ page }) => {
 
     await page.goto('https://register.rediff.com/register/register.php?FormName=user_details')
 

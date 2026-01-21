@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
 
-test('Verify menu items ', async ({ page }) => {
+test('Verify menu items ',  async ({ page }) => {
 
     //actions 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+   await  page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login') // Pending 
 
     await page.locator("input[name='username']").fill("Admin")
 
@@ -15,8 +15,8 @@ test('Verify menu items ', async ({ page }) => {
    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
 
    await page.waitForTimeout(5000)
-   const menuitems = await page.locator('//span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"]').allTextContents()
+   const menuitemtext = await page.locator('//span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"]').first().textContent()
 
 
-   console.log(menuitems)
+   console.log(menuitemtext)
 })
