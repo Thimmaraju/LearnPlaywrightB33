@@ -12,10 +12,16 @@ let credentials = {
 
 test.describe("Login functionality ", () => {
 
+    test.beforeEach(async ({page})=>{
+
+     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
+    })
+
 
 
     test('Verify logo visibility', {tag: "@smoke"}, async ({ page }) => {
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
         await expect(page.getByRole('img', { name: 'company-branding' })).toBeVisible();
     });
 
@@ -25,8 +31,7 @@ test.describe("Login functionality ", () => {
 
       test.slow()
 
-        //actions 
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+      
 
         await page.locator("input[name='usernamjghhgb']").fill("Admin")
 
@@ -47,8 +52,7 @@ test.describe("Login functionality ", () => {
     test('Verify login valid Username and Invalid password', async ({ page }) => {
 
         credentials['invalidpassword'] = "nerfkjnrf"
-        //actions 
-        await page.goto('/web/index.php/auth/login')
+     
 
         await page.locator("input[name='username']").fill(logindata.username)
 
@@ -64,7 +68,7 @@ test.describe("Login functionality ", () => {
     test('Verify login invalid Username and valid password', async ({ page }) => {
 
         //actions 
-        await page.goto('/web/index.php/auth/login')
+
 
         await page.locator("input[name='username']").fill(logindata.wrongUsername)
 
@@ -80,7 +84,7 @@ test.describe("Login functionality ", () => {
     test('Verify login invalid Username and invalid password', async ({ page }) => {
 
         //actions 
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+       
 
         await page.locator("input[name='username']").fill(logindata.wrongUsername)
 
@@ -98,7 +102,7 @@ test.describe("Login functionality ", () => {
     test.skip('Verify login with blank fields', async ({ page }) => {
 
         //actions 
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+       
         await page.locator("//button[@type='submit']").click()
 
         // assertion - validation
@@ -112,17 +116,9 @@ test.describe("Login functionality ", () => {
     });
 
 
-    test("Local Apps test", async ({ page }) => {
-
-
-        await page.goto('http://localhost:3000/')
-
-        await page.waitForTimeout(20000)
-    })
-
 
     test('Verify login with SQL injection attempt', async ({ page }) => {
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
         await page.locator("input[name='username']").fill("' OR '1'='1");
         await page.locator("//input[@placeholder='Password']").fill("' OR '1'='1");
         await page.locator("//button[@type='submit']").click();
@@ -130,7 +126,7 @@ test.describe("Login functionality ", () => {
     });
 
     test('Verify login with special characters in credentials', async ({ page }) => {
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
         await page.locator("input[name='username']").fill("admin!@#$%");
         await page.locator("//input[@placeholder='Password']").fill("pass<>?");
         await page.locator("//button[@type='submit']").click();
@@ -138,7 +134,7 @@ test.describe("Login functionality ", () => {
     });
 
     test('Verify login with whitespace in username', async ({ page }) => {
-        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+ 
         await page.locator("input[name='username']").fill("  admin  ");
         await page.locator("//input[@placeholder='Password']").fill(logindata.password);
         await page.locator("//button[@type='submit']").click();

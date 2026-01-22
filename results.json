@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,6 +28,10 @@
         {
           "outputFile": "results.json"
         }
+      ],
+      [
+        "D:\\LearnPlaywrightB33\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -41,55 +45,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "D:/LearnPlaywrightB33/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 40000
-      },
-      {
-        "outputDir": "D:/LearnPlaywrightB33/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "D:/LearnPlaywrightB33/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 40000
-      },
-      {
-        "outputDir": "D:/LearnPlaywrightB33/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "D:/LearnPlaywrightB33/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 40000
-      },
-      {
-        "outputDir": "D:/LearnPlaywrightB33/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
@@ -111,180 +67,93 @@
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Login functionality ",
-          "file": "login.spec.js",
-          "line": 13,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Verify login with valid credentials",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "important"
-              ],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
-                        "line": 26,
-                        "column": 12
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 121546,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
-                            "column": 59,
-                            "line": 31
-                          },
-                          "message": "Error: locator.fill: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\\'usernamjghhgb\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m 30 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='usernamjghhgb']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@placeholder='Password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"admin123\"\u001b[39m)\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@type='submit']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\login.spec.js:31:59\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-21T05:26:45.060Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "D:\\LearnPlaywrightB33\\tests\\login.spec.js",
-                            "line": 26,
-                            "column": 12
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\LearnPlaywrightB33\\test-results\\login-Login-functionality--5e440-ogin-with-valid-credentials-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-2ebeb2caf2ccc98deb7d",
-              "file": "login.spec.js",
-              "line": 24,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "redif_register.spec.js",
-      "file": "redif_register.spec.js",
+      "title": "softharassertions.spec.js",
+      "file": "softharassertions.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Register flow ",
-          "ok": true,
-          "tags": [
-            "important"
-          ],
+          "title": "Verify login with valid credentials",
+          "ok": false,
+          "tags": [],
           "tests": [
             {
               "timeout": 40000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3114,
-                  "errors": [],
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 34527,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js:9:75",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
+                      "column": 75,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m  8 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m        \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@alt=\"company-branding1\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='username']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m 12 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
+                        "column": 75,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m  8 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m        \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@alt=\"company-branding1\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='username']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js:9:75\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-21T05:26:44.855Z",
+                  "startTime": "2026-01-22T05:07:46.300Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\video.webm"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\redif_register-Verify-Register-flow--chromium\\trace.zip"
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
+                    "column": 75,
+                    "line": 9
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "caa01047290a207a2211-0f3aa387605ce9367c90",
-          "file": "redif_register.spec.js",
+          "id": "fa14f05523f47a956aa1-7c30b7f1a17c044681f3",
+          "file": "softharassertions.spec.js",
           "line": 4,
-          "column": 5
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-21T05:26:40.971Z",
-    "duration": 127679.99799999999,
-    "expected": 1,
+    "startTime": "2026-01-22T05:07:43.959Z",
+    "duration": 40788.134,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0
