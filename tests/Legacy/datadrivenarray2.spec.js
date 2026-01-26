@@ -1,15 +1,15 @@
 
 import { test, expect } from '@playwright/test';
 
-import logindata from "../testData/login.json"
+import logindata from "../../testData/login.json"
 
 
 
 const jobtitles = ["QA Analyst II","SDET II","Software test Engineer II","QA Engineer II"]
 
-for (let title of jobtitles) {
+jobtitles.forEach(element => {
 
-    test(`Verify Add Job title functionality - ${title}`, async ({ page }) => {
+    test(`Verify Add Job title functionality - ${element}`, async ({ page }) => {
 
         await page.goto('/web/index.php/auth/login')
 
@@ -29,7 +29,7 @@ for (let title of jobtitles) {
 
         await page.locator("//button[contains(.,'Add')]").click()
 
-        await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(title)
+        await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(element)
 
         await page.locator("//textarea[@placeholder='Type description here']").pressSequentially("erkjfvnhhr", { delay: 500 })
 
@@ -46,5 +46,5 @@ for (let title of jobtitles) {
 
     })
 
-}
+})
 

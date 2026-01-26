@@ -1,0 +1,38 @@
+{
+  "loginTests": [
+    {
+      "testName": "Valid Credentials",
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "isValidLogin": true
+    },
+    {
+      "testName": "Invalid Username",
+      "username": "invalid_user",
+      "password": "secret_sauce",
+      "isValidLogin": false,
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "testName": "Invalid Password",
+      "username": "standard_user",
+      "password": "wrong_password",
+      "isValidLogin": false,
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "testName": "Both Invalid Credentials",
+      "username": "invalid_user",
+      "password": "wrong_password",
+      "isValidLogin": false,
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "testName": "Locked Out User",
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "isValidLogin": false,
+      "expectedError": "Epic sadface: Sorry, this user has been locked out."
+    }
+  ]
+}

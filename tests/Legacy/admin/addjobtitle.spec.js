@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import addjobtitledata from "../../testData/Admin/addjobtitle.json"
-import logindata from "../../testData/login.json"
+import addjobtitledata from "../../../testData/Admin/addjobtitle.json"
+import logindata from "../../../testData/login.json"
 
 function generateRandomJobTitle() {
     const randomchars = (Math.random() + 1).toString(36).substring(7);
@@ -40,10 +40,6 @@ test('Verify Add Job title functionality', async ({ page }) => {
    await page.locator("//button[@type='submit']").click()
 
    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList')
-
-
-
-
 
 
 })

@@ -60,102 +60,246 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 3,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "softharassertions.spec.js",
-      "file": "softharassertions.spec.js",
+      "title": "swaglogintest.spec.js",
+      "file": "swaglogintest.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Verify login with valid credentials",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Swag Labs Login Tests",
+          "file": "swaglogintest.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [],
+          "suites": [
             {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
-              "results": [
+              "title": "Login with different credentials",
+              "file": "swaglogintest.spec.js",
+              "line": 18,
+              "column": 8,
+              "specs": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 34527,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n\n    at D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js:9:75",
-                    "location": {
-                      "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
-                      "column": 75,
-                      "line": 9
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m  8 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m        \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@alt=\"company-branding1\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='username']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m 12 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "title": "Verify login to Swaglabs Valid Credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
-                        "column": 75,
-                        "line": 9
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//img[@alt=\"company-branding1\"]')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('//img[@alt=\"company-branding1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'\u001b[39m)\n \u001b[90m  8 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m        \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@alt=\"company-branding1\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='username']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js:9:75\u001b[22m"
+                      "timeout": 40000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Microsoft Edge",
+                      "projectName": "Microsoft Edge",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4287,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-26T05:45:00.479Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\LearnPlaywrightB33\\test-results\\swaglogintest-Swag-Labs-Lo-cba3d--Swaglabs-Valid-Credentials-Microsoft-Edge\\test-finished-1.png"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-22T05:07:46.300Z",
-                  "annotations": [],
-                  "attachments": [
+                  "id": "8206cccaa4726b3bbdba-eb1610490f73c2b89130",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Invalid Username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\softharassertions-Verify-login-with-valid-credentials-Microsoft-Edge\\trace.zip"
+                      "timeout": 40000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Microsoft Edge",
+                      "projectName": "Microsoft Edge",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3929,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-26T05:45:04.901Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\LearnPlaywrightB33\\test-results\\swaglogintest-Swag-Labs-Lo-57409-o-Swaglabs-Invalid-Username-Microsoft-Edge\\test-finished-1.png"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "errorLocation": {
-                    "file": "D:\\LearnPlaywrightB33\\tests\\softharassertions.spec.js",
-                    "column": 75,
-                    "line": 9
-                  }
+                  "id": "8206cccaa4726b3bbdba-d94b0d2de4711c36f283",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Invalid Password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 40000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Microsoft Edge",
+                      "projectName": "Microsoft Edge",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3081,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-26T05:45:08.885Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\LearnPlaywrightB33\\test-results\\swaglogintest-Swag-Labs-Lo-8a61f-o-Swaglabs-Invalid-Password-Microsoft-Edge\\test-finished-1.png"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-e003c87adf41184c6361",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Both Invalid Credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 40000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Microsoft Edge",
+                      "projectName": "Microsoft Edge",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2936,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-26T05:45:12.049Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\LearnPlaywrightB33\\test-results\\swaglogintest-Swag-Labs-Lo-eb527-bs-Both-Invalid-Credentials-Microsoft-Edge\\test-finished-1.png"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-18158ffd3e376d67a4e5",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Locked Out User",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 40000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Microsoft Edge",
+                      "projectName": "Microsoft Edge",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3081,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-26T05:45:15.017Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\LearnPlaywrightB33\\test-results\\swaglogintest-Swag-Labs-Lo-7aa05-to-Swaglabs-Locked-Out-User-Microsoft-Edge\\test-finished-1.png"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-7c6335b6d8a57c9331af",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
                 }
-              ],
-              "status": "unexpected"
+              ]
             }
-          ],
-          "id": "fa14f05523f47a956aa1-7c30b7f1a17c044681f3",
-          "file": "softharassertions.spec.js",
-          "line": 4,
-          "column": 6
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-22T05:07:43.959Z",
-    "duration": 40788.134,
-    "expected": 0,
+    "startTime": "2026-01-26T05:44:57.033Z",
+    "duration": 21165.18200000003,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
