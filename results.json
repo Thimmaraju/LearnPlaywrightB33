@@ -67,62 +67,67 @@
   },
   "suites": [
     {
-      "title": "Legacy\\WWE\\radiobutton.spec.js",
-      "file": "Legacy/WWE/radiobutton.spec.js",
+      "title": "WWE\\uploadNDownloadfiles.spec.js",
+      "file": "WWE/uploadNDownloadfiles.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Working with Radio button",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Automation - Working With Elements",
+          "file": "WWE/uploadNDownloadfiles.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Microsoft Edge",
-              "projectName": "Microsoft Edge",
-              "results": [
+              "title": "Upload Multiple files and assert",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8682,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14215,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T05:22:58.510Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\WWE-uploadNDownloadfiles-A-d4c4b-d-Multiple-files-and-assert-Microsoft-Edge\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-27T05:14:58.335Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB33\\test-results\\Legacy-WWE-radiobutton-Working-with-Radio-button-Microsoft-Edge\\test-finished-1.png"
-                    }
-                  ]
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "1f91ff69c8136b4082b5-8534889994f9f22e5840",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 37,
+              "column": 5
             }
-          ],
-          "id": "4d3c7ffe192a9ecd3c5e-48254564f53d8b3df8c5",
-          "file": "Legacy/WWE/radiobutton.spec.js",
-          "line": 3,
-          "column": 6
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-27T05:14:54.432Z",
-    "duration": 12845.910000000149,
+    "startTime": "2026-01-28T05:22:53.951Z",
+    "duration": 19183.887000000104,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

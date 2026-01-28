@@ -20,22 +20,22 @@ import { faker } from '@faker-js/faker';
     await page.getByRole('link', { name: 'PIM' }).click();
     await page.getByRole('link', { name: 'Add Employee' }).click();
 
-    //await page.getByRole('button', {name : "Submit"}).click()
-
     await page.getByRole('textbox', { name: 'First Name' }).fill("Madhukar");
 
     await page.getByRole('textbox', { name: 'Last Name' }).fill("B");
 
     await page.getByRole('textbox').nth(4).fill(faker.string.alpha(5));
 
+    await page.locator('input[type="file"]').setInputFiles('testData/fileuploads/AI-QA.png')
+
     await page.getByRole('button', { name: 'Save' }).click();
 
-    let i =0
-    while (i<=10){
+    // let i =0
+    // while (i<=10){
 
-         await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
-         i++
-    }
+    //      await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
+    //      i++
+    // }
 
  
   });

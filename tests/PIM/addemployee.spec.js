@@ -25,7 +25,7 @@ test.beforeEach( async ({page}) => {
 test("Verify add Employee with Madatory Details", async () => {
 
    await addemp.clickAddEmployee()
-   await addemp.addEmployee(addempData.firstname, addempData.lastname)
+   await addemp.addEmployee(addempData.firstname, addempData.lastname, 'testData/fileuploads/AI-QA.png')
    await addemp.empCreationSuccess()
 
 })
