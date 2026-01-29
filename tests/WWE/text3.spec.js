@@ -35,7 +35,11 @@ test.describe('Text2 Suite', () => {
 
         const allproductNames = await page.locator('//h4[@class="product-name"]').allInnerTexts()
 
-        //console.log(allproductNames)
+        console.log(allproductNames)
+
+        const present = allproductNames.includes('RAJu - 1/4 Kg')
+
+        expect(present).toBe(true)
 
         for(let vegitable of allproductNames ){
 

@@ -1,0 +1,1 @@
+Image downloaded successfully and saved to D:\LearnPlaywrightB33\downloads\dearcute.jpg

@@ -53,7 +53,7 @@ test.describe('Automation - Working With Elements', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            page.locator('//a[@href="download/snapshot.jpg"]').click()
+            page.locator('//a[@href="download/login_success.png"]').click()
         ]);
 
         const suggestedFileName = download.suggestedFilename()
@@ -67,7 +67,7 @@ test.describe('Automation - Working With Elements', () => {
     test('Download Multiple files and assert', async ({ page }) => {
         await page.goto('https://the-internet.herokuapp.com/download')
 
-        const DownloadLinks = ['//a[@href="download/imagen.jpg"]', '//a[@href="download/logo-1.png"]']
+        const DownloadLinks = ['//a[@href="download/Locators Quiz.pdf"]', '//a[@href="download/sample_media_file.png"]']
 
         for (let link of DownloadLinks) {
 
@@ -78,8 +78,9 @@ test.describe('Automation - Working With Elements', () => {
             ]);
 
             const suggestedFileName = download.suggestedFilename()
-            const filePath = 'tests/downloads/' + suggestedFileName
+            const filePath = 'downloads/' + suggestedFileName
             await download.saveAs(filePath)
+            expect(fs.existsSync(filePath)).toBeTruthy()
 
         }
     })
@@ -87,7 +88,7 @@ test.describe('Automation - Working With Elements', () => {
     test('Direct Download and assert', async ({ page }) => {
 
         // Define the image URL
-        const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzbTezYange_PJP3KLcuf3kr6q_5uQtRt-IgMo9p8pvmC1gWMGF9-YcaAEGk4m7l95hzZkHfCcJQ5hMQrBU43CHg';
+        const imageUrl = 'https://static.vecteezy.com/system/resources/thumbnails/063/230/122/small/young-deer-adorned-with-a-flower-crown-resting-peacefully-in-a-vibrant-meadow-filled-with-blooming-wildflowers-on-a-sunny-day-in-spring-photo.jpg';
 
         // Fetch the image using Playwright's request API
         const response = await page.request.get(imageUrl);
@@ -105,7 +106,7 @@ test.describe('Automation - Working With Elements', () => {
             }
 
             // Define the file name and path to save the image inside the 'downloads' folder
-            const savePath = path.join(downloadsFolder, 'virat.jpg');
+            const savePath = path.join(downloadsFolder, 'dearcute.jpg');
 
             // Write the buffer to a file
             fs.writeFileSync(savePath, buffer);

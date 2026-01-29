@@ -1,0 +1,127 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "Fork me on GitHub":
+      - /url: https://github.com/tourdedave/the-internet
+      - img "Fork me on GitHub" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - heading "File Downloader" [level=3] [ref=e8]
+      - link "nonFunctionalTest.docx" [ref=e9] [cursor=pointer]:
+        - /url: download/nonFunctionalTest.docx
+      - link "test.txt" [ref=e10] [cursor=pointer]:
+        - /url: download/test.txt
+      - link "Testfile.pdf" [ref=e11] [cursor=pointer]:
+        - /url: download/Testfile.pdf
+      - link "87a19877-4148-43a8-9bc3-6e6e3871132a.jpg" [ref=e12] [cursor=pointer]:
+        - /url: download/87a19877-4148-43a8-9bc3-6e6e3871132a.jpg
+      - link "foto.png" [ref=e13] [cursor=pointer]:
+        - /url: download/foto.png
+      - link "test_upload.txt" [ref=e14] [cursor=pointer]:
+        - /url: download/test_upload.txt
+      - link "users.csv" [ref=e15] [cursor=pointer]:
+        - /url: download/users.csv
+      - link "3f50c9fac4c64803b5f15bc4fb0d11c6_Template-import-office-user-basic-info.xlsx" [ref=e16] [cursor=pointer]:
+        - /url: download/3f50c9fac4c64803b5f15bc4fb0d11c6_Template-import-office-user-basic-info.xlsx
+      - link "Gemini_Generated_Image_d8haokd8haokd8ha.png" [ref=e17] [cursor=pointer]:
+        - /url: download/Gemini_Generated_Image_d8haokd8haokd8ha.png
+      - link "Seguimiento_Lectura.txt" [ref=e18] [cursor=pointer]:
+        - /url: download/Seguimiento_Lectura.txt
+      - link "pwts.txt" [ref=e19] [cursor=pointer]:
+        - /url: download/pwts.txt
+      - link "report.txt" [ref=e20] [cursor=pointer]:
+        - /url: download/report.txt
+      - link "ravi.jpeg" [ref=e21] [cursor=pointer]:
+        - /url: download/ravi.jpeg
+      - link "test-upload.txt" [ref=e22] [cursor=pointer]:
+        - /url: download/test-upload.txt
+      - link "login_success.png" [ref=e23] [cursor=pointer]:
+        - /url: download/login_success.png
+      - link "Marksheet_Dhanapriya.pdf" [ref=e24] [cursor=pointer]:
+        - /url: download/Marksheet_Dhanapriya.pdf
+      - link "test.csv" [ref=e25] [cursor=pointer]:
+        - /url: download/test.csv
+      - link "sample_media_file.png" [ref=e26] [cursor=pointer]:
+        - /url: download/sample_media_file.png
+      - link "requirements.txt" [ref=e27] [cursor=pointer]:
+        - /url: download/requirements.txt
+      - link "BA5082AB-9D05-49B5-8FE0-8001F3D249B6.png" [ref=e28] [cursor=pointer]:
+        - /url: download/BA5082AB-9D05-49B5-8FE0-8001F3D249B6.png
+      - link "AI_hint.txt" [ref=e29] [cursor=pointer]:
+        - /url: download/AI_hint.txt
+      - link "Testcase1_hubspot-crm.xlsx" [ref=e30] [cursor=pointer]:
+        - /url: download/Testcase1_hubspot-crm.xlsx
+      - link "2.jpeg" [ref=e31] [cursor=pointer]:
+        - /url: download/2.jpeg
+      - link "fileUploading.txt" [ref=e32] [cursor=pointer]:
+        - /url: download/fileUploading.txt
+      - link "random_data.txt" [ref=e33] [cursor=pointer]:
+        - /url: download/random_data.txt
+      - link "qnx_server.core" [ref=e34] [cursor=pointer]:
+        - /url: download/qnx_server.core
+      - link "LambdaTest.txt" [ref=e35] [cursor=pointer]:
+        - /url: download/LambdaTest.txt
+      - link "ضع قليلاً من السكر.pdf" [ref=e36] [cursor=pointer]:
+        - /url: download/ضع قليلاً من السكر.pdf
+      - link "selenide-intro.txt" [ref=e37] [cursor=pointer]:
+        - /url: download/selenide-intro.txt
+      - link "SomeFile.txt" [ref=e38] [cursor=pointer]:
+        - /url: download/SomeFile.txt
+      - link "Yeni Metin Belgesi2.txt" [ref=e39] [cursor=pointer]:
+        - /url: download/Yeni Metin Belgesi2.txt
+      - link "rss.dat" [ref=e40] [cursor=pointer]:
+        - /url: download/rss.dat
+      - link "Fondo_de_Zoom_azul_2.jpg" [ref=e41] [cursor=pointer]:
+        - /url: download/Fondo_de_Zoom_azul_2.jpg
+      - link "Jpeg_with_exif.jpeg" [ref=e42] [cursor=pointer]:
+        - /url: download/Jpeg_with_exif.jpeg
+      - link "selenium-snapshot.png" [ref=e43] [cursor=pointer]:
+        - /url: download/selenium-snapshot.png
+      - link "test-file.txt" [ref=e44] [cursor=pointer]:
+        - /url: download/test-file.txt
+      - link "test-upload-1769651375844-1.txt" [ref=e45] [cursor=pointer]:
+        - /url: download/test-upload-1769651375844-1.txt
+      - link "sample3.pdf" [ref=e46] [cursor=pointer]:
+        - /url: download/sample3.pdf
+      - link "bb.txt" [ref=e47] [cursor=pointer]:
+        - /url: download/bb.txt
+      - link "Locators Quiz.pdf" [ref=e48] [cursor=pointer]:
+        - /url: download/Locators Quiz.pdf
+      - link "Fee Receipt.pdf" [ref=e49] [cursor=pointer]:
+        - /url: download/Fee Receipt.pdf
+      - link "sample-document.pdf" [ref=e50] [cursor=pointer]:
+        - /url: download/sample-document.pdf
+      - link "file.txt" [ref=e51] [cursor=pointer]:
+        - /url: download/file.txt
+      - link "some-file.txt" [ref=e52] [cursor=pointer]:
+        - /url: download/some-file.txt
+      - link "arquivo.txt" [ref=e53] [cursor=pointer]:
+        - /url: download/arquivo.txt
+      - link "sample.pdf" [ref=e54] [cursor=pointer]:
+        - /url: download/sample.pdf
+      - link "Pag Sulat.png" [ref=e55] [cursor=pointer]:
+        - /url: download/Pag Sulat.png
+      - link "HealthReport.pdf" [ref=e56] [cursor=pointer]:
+        - /url: download/HealthReport.pdf
+      - link "1.jpeg" [ref=e57] [cursor=pointer]:
+        - /url: download/1.jpeg
+      - link "3.jpeg" [ref=e58] [cursor=pointer]:
+        - /url: download/3.jpeg
+      - link "JAVA CODING PROBLEMS_SDET.txt" [ref=e59] [cursor=pointer]:
+        - /url: download/JAVA CODING PROBLEMS_SDET.txt
+      - link "foto2.png" [ref=e60] [cursor=pointer]:
+        - /url: download/foto2.png
+      - link "sample-zip-file.zip" [ref=e61] [cursor=pointer]:
+        - /url: download/sample-zip-file.zip
+      - link "company_db.sql" [ref=e62] [cursor=pointer]:
+        - /url: download/company_db.sql
+      - link "zero_bytes_file.txt" [ref=e63] [cursor=pointer]:
+        - /url: download/zero_bytes_file.txt
+  - generic [ref=e65]:
+    - separator [ref=e66]
+    - generic [ref=e67]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e68] [cursor=pointer]:
+        - /url: http://elementalselenium.com/
+```
