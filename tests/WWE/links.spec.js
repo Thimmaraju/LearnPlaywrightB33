@@ -16,7 +16,9 @@ test.describe('Automation - Working With Elements', () => {
 
         await page.goto('https://www.wikipedia.org/')
 
-        await expect(page.locator("//a")).toHaveCount(371)
+        // How many links 
+
+        await expect(page.locator("//a")).toHaveCount(376)
 
          //await page.locator('[data-jsl10n="commons.name"]').click()
 

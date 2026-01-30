@@ -51,6 +51,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+
+    {
+      name: "setup",
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome'
+      },
+      testMatch: /.*\.setup\.js/,
+    },
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'],
@@ -79,16 +88,18 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' ,
-       // viewport : {width: 375 , height : 812}
-      },
-    },
     // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    //   name: 'Microsoft Edge',
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge' ,
+    //    // viewport : {width: 375 , height : 812}
+    //   },
     // },
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', storageState: ".auth/user.json", },
+
+      dependencies: ["setup"],
+    },
   ],
 
   /* Run your local dev server before starting the tests */

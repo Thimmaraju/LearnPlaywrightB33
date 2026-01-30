@@ -1,0 +1,1400 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: Vivo 5g Mobiles
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3DVivo%25205g%2520Mobiles%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e79]:
+          - generic [ref=e82]: Filters
+          - generic [ref=e84]:
+            - generic [ref=e85]: CATEGORIES
+            - generic [ref=e87]:
+              - img [ref=e89] [cursor=pointer]
+              - link "Mobiles & Accessories" [ref=e91] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&q=Vivo+5g+Mobiles&otracker=categorytree
+            - generic [ref=e93]:
+              - img [ref=e95] [cursor=pointer]
+              - link "Mobiles" [ref=e97] [cursor=pointer]:
+                - /url: /mobiles/pr?sid=tyy,4io&q=Vivo+5g+Mobiles&otracker=categorytree
+          - generic [ref=e98]:
+            - generic [ref=e100]: Price
+            - generic [ref=e116]:
+              - generic [ref=e117]: .
+              - generic [ref=e118]: .
+              - generic [ref=e119]: .
+              - generic [ref=e120]: .
+              - generic [ref=e121]: .
+              - generic: .
+            - generic [ref=e122]:
+              - combobox [ref=e124]:
+                - option "Min" [selected]
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+              - generic [ref=e125]: to
+              - combobox [ref=e127]:
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+                - option "₹30000+" [selected]
+          - generic [ref=e128]:
+            - generic [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: Brand
+              - img [ref=e131]
+            - generic "vivo" [ref=e135] [cursor=pointer]:
+              - generic [ref=e139]: vivo
+          - generic [ref=e140]:
+            - img [ref=e145] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: "?"
+          - generic [ref=e149] [cursor=pointer]:
+            - generic [ref=e150]: Customer Ratings
+            - img [ref=e151]
+          - generic [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]: GST Invoice Available
+            - img [ref=e156]
+          - generic [ref=e158]:
+            - generic [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]: RAM
+              - img [ref=e161]
+            - generic [ref=e164]:
+              - generic "4 GB" [ref=e165] [cursor=pointer]:
+                - generic [ref=e169]: 4 GB
+              - generic "3 GB" [ref=e170] [cursor=pointer]:
+                - generic [ref=e174]: 3 GB
+              - generic "2 GB" [ref=e175] [cursor=pointer]:
+                - generic [ref=e179]: 2 GB
+              - generic "8 GB and Above" [ref=e180] [cursor=pointer]:
+                - generic [ref=e184]: 8 GB and Above
+              - generic "6 GB" [ref=e185] [cursor=pointer]:
+                - generic [ref=e189]: 6 GB
+              - generic "1GB and Below" [ref=e190] [cursor=pointer]:
+                - generic [ref=e194]: 1GB and Below
+          - generic [ref=e196] [cursor=pointer]:
+            - generic [ref=e197]: Internal Storage
+            - img [ref=e198]
+          - generic [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]: Battery Capacity
+            - img [ref=e203]
+          - generic [ref=e206] [cursor=pointer]:
+            - generic [ref=e207]: Screen Size
+            - img [ref=e208]
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]: Primary Camera
+            - img [ref=e213]
+          - generic [ref=e216] [cursor=pointer]:
+            - generic [ref=e217]: Secondary Camera
+            - img [ref=e218]
+          - generic [ref=e221] [cursor=pointer]:
+            - generic [ref=e222]: Processor Brand
+            - img [ref=e223]
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: Speciality
+            - img [ref=e228]
+          - generic [ref=e231] [cursor=pointer]:
+            - generic [ref=e232]: Resolution Type
+            - img [ref=e233]
+          - generic [ref=e236] [cursor=pointer]:
+            - generic [ref=e237]: Operating System
+            - img [ref=e238]
+          - generic [ref=e241] [cursor=pointer]:
+            - generic [ref=e242]: Network Type
+            - img [ref=e243]
+          - generic [ref=e246] [cursor=pointer]:
+            - generic [ref=e247]: Sim Type
+            - img [ref=e248]
+          - generic [ref=e250]:
+            - generic [ref=e251] [cursor=pointer]:
+              - generic [ref=e252]: Offers
+              - img [ref=e253]
+            - generic [ref=e256]:
+              - generic "Special Price" [ref=e257] [cursor=pointer]:
+                - generic [ref=e261]: Special Price
+              - generic "Buy More, Save More" [ref=e262] [cursor=pointer]:
+                - generic [ref=e266]: Buy More, Save More
+              - generic "No Cost EMI" [ref=e267] [cursor=pointer]:
+                - generic [ref=e271]: No Cost EMI
+          - generic [ref=e273] [cursor=pointer]:
+            - generic [ref=e274]: Features
+            - img [ref=e275]
+          - generic [ref=e278] [cursor=pointer]:
+            - generic [ref=e279]: Type
+            - img [ref=e280]
+          - generic [ref=e283] [cursor=pointer]:
+            - generic [ref=e284]: Number of Cores
+            - img [ref=e285]
+          - generic [ref=e288] [cursor=pointer]:
+            - generic [ref=e289]: Availability
+            - img [ref=e290]
+          - generic [ref=e292]:
+            - generic [ref=e293] [cursor=pointer]:
+              - generic [ref=e294]: Discount
+              - img [ref=e295]
+            - generic [ref=e298]:
+              - generic "50% or more" [ref=e299] [cursor=pointer]:
+                - generic [ref=e303]: 50% or more
+              - generic "40% or more" [ref=e304] [cursor=pointer]:
+                - generic [ref=e308]: 40% or more
+              - generic "30% or more" [ref=e309] [cursor=pointer]:
+                - generic [ref=e313]: 30% or more
+              - generic "20% or more" [ref=e314] [cursor=pointer]:
+                - generic [ref=e318]: 20% or more
+              - generic "10% or more" [ref=e319] [cursor=pointer]:
+                - generic [ref=e323]: 10% or more
+          - generic [ref=e325] [cursor=pointer]:
+            - generic [ref=e326]: Operating System Version Name
+            - img [ref=e327]
+          - generic [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]: Clock Speed
+            - img [ref=e332]
+        - link "Need help? Help me decide Buying Guide" [ref=e335] [cursor=pointer]:
+          - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+          - generic [ref=e336]: Need help?
+          - generic [ref=e337]:
+            - text: Help me decide
+            - img [ref=e338]
+          - img "Buying Guide" [ref=e340]
+      - generic [ref=e341]:
+        - generic [ref=e344]:
+          - generic [ref=e345]:
+            - generic [ref=e346]:
+              - link "Home" [ref=e347] [cursor=pointer]:
+                - /url: /
+              - img [ref=e348]
+            - generic [ref=e350]:
+              - link "Mobiles & Accessories" [ref=e351] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+              - img [ref=e352]
+            - link "Mobiles" [ref=e355] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+          - generic [ref=e356]: Showing 1 – 24 of 612 results for "Vivo 5g Mobiles"
+          - generic [ref=e357]:
+            - generic [ref=e358]: Sort By
+            - generic [ref=e359]: Relevance
+            - generic [ref=e360] [cursor=pointer]: Popularity
+            - generic [ref=e361] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e362] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e363] [cursor=pointer]: Newest First
+        - link "Bestseller vivo T4x 5G (Marine Blue, 128 GB) Add to Compare vivo T4x 5G (Marine Blue, 128 GB) 4.5 2,06,357 Ratings & 9,021 Reviews • 6 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹15,499 ₹17,999 13% off Upto ₹12,650 Off on Exchange Bank Offer" [ref=e368] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-marine-blue-128-gb/p/itm017656bdd097b?pid=MOBH9JUSTWEMVADU&lid=LSTMOBH9JUSTWEMVADUWC2KM6&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUSTWEMVADU.SEARCH&ppt=sp&ppn=sp&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e369]: Bestseller
+          - generic [ref=e370]:
+            - img "vivo T4x 5G (Marine Blue, 128 GB)" [ref=e374]
+            - generic [ref=e380]: Add to Compare
+            - img [ref=e383]
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - generic [ref=e387]: vivo T4x 5G (Marine Blue, 128 GB)
+              - generic [ref=e388]:
+                - generic [ref=e390]:
+                  - text: "4.5"
+                  - img [ref=e391]
+                - generic [ref=e393]: 2,06,357 Ratings & 9,021 Reviews
+              - list [ref=e395]:
+                - listitem [ref=e396]: • 6 GB RAM | 128 GB ROM
+                - listitem [ref=e397]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e398]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e399]: • 6500 mAh Battery
+                - listitem [ref=e400]: • Dimensity 7300 5G Processor
+                - listitem [ref=e401]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e402]:
+              - generic [ref=e404]:
+                - generic [ref=e405]: ₹15,499
+                - generic [ref=e406]: ₹17,999
+                - generic [ref=e407]: 13% off
+              - img [ref=e409]
+              - generic [ref=e411]:
+                - generic [ref=e412]: Upto
+                - generic [ref=e413]: ₹12,650
+                - generic [ref=e414]: Off on Exchange
+              - generic [ref=e417]: Bank Offer
+        - link "Bestseller vivo T4x 5G (Pronto Purple, 128 GB) Add to Compare vivo T4x 5G (Pronto Purple, 128 GB) 4.5 2,06,357 Ratings & 9,021 Reviews • 6 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹15,499 ₹17,999 13% off Upto ₹12,650 Off on Exchange Bank Offer" [ref=e422] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-pronto-purple-128-gb/p/itm017656bdd097b?pid=MOBH9JUSZFBNVDXM&lid=LSTMOBH9JUSZFBNVDXMZM1RXR&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUSZFBNVDXM.SEARCH&ppt=sp&ppn=sp&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e423]: Bestseller
+          - generic [ref=e424]:
+            - img "vivo T4x 5G (Pronto Purple, 128 GB)" [ref=e428]
+            - generic [ref=e434]: Add to Compare
+            - img [ref=e437]
+          - generic [ref=e439]:
+            - generic [ref=e440]:
+              - generic [ref=e441]: vivo T4x 5G (Pronto Purple, 128 GB)
+              - generic [ref=e442]:
+                - generic [ref=e444]:
+                  - text: "4.5"
+                  - img [ref=e445]
+                - generic [ref=e447]: 2,06,357 Ratings & 9,021 Reviews
+              - list [ref=e449]:
+                - listitem [ref=e450]: • 6 GB RAM | 128 GB ROM
+                - listitem [ref=e451]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e452]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e453]: • 6500 mAh Battery
+                - listitem [ref=e454]: • Dimensity 7300 5G Processor
+                - listitem [ref=e455]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e456]:
+              - generic [ref=e458]:
+                - generic [ref=e459]: ₹15,499
+                - generic [ref=e460]: ₹17,999
+                - generic [ref=e461]: 13% off
+              - img [ref=e463]
+              - generic [ref=e465]:
+                - generic [ref=e466]: Upto
+                - generic [ref=e467]: ₹12,650
+                - generic [ref=e468]: Off on Exchange
+              - generic [ref=e471]: Bank Offer
+        - link "vivo T4x 5G (Marine Blue, 128 GB) Add to Compare vivo T4x 5G (Marine Blue, 128 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹16,499 ₹19,499 15% off Upto ₹13,250 Off on Exchange Bank Offer" [ref=e476] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-marine-blue-128-gb/p/itm017656bdd097b?pid=MOBH9JUSZWZ5ZZAM&lid=LSTMOBH9JUSZWZ5ZZAMXLXFKW&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUSZWZ5ZZAM.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e477]:
+            - img "vivo T4x 5G (Marine Blue, 128 GB)" [ref=e481]
+            - generic [ref=e487]: Add to Compare
+            - img [ref=e490]
+          - generic [ref=e492]:
+            - generic [ref=e493]:
+              - generic [ref=e494]: vivo T4x 5G (Marine Blue, 128 GB)
+              - generic [ref=e495]:
+                - generic [ref=e497]:
+                  - text: "4.4"
+                  - img [ref=e498]
+                - generic [ref=e500]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e502]:
+                - listitem [ref=e503]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e504]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e505]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e506]: • 6500 mAh Battery
+                - listitem [ref=e507]: • Dimensity 7300 5G Processor
+                - listitem [ref=e508]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e509]:
+              - generic [ref=e511]:
+                - generic [ref=e512]: ₹16,499
+                - generic [ref=e513]: ₹19,499
+                - generic [ref=e514]: 15% off
+              - img [ref=e516]
+              - generic [ref=e518]:
+                - generic [ref=e519]: Upto
+                - generic [ref=e520]: ₹13,250
+                - generic [ref=e521]: Off on Exchange
+              - generic [ref=e524]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB) 4.4 58,654 Ratings & 1,813 Reviews • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹12,999 ₹14,999 13% off Upto ₹10,550 Off on Exchange Bank Offer" [ref=e529] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-prism-blue-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FP7WFPCEE&lid=LSTMOBHDY9FP7WFPCEE9J8DVQ&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9FP7WFPCEE.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e530]:
+            - img "vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB)" [ref=e534]
+            - generic [ref=e540]: Add to Compare
+            - img [ref=e543]
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - generic [ref=e547]: vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB)
+              - generic [ref=e548]:
+                - generic [ref=e550]:
+                  - text: "4.4"
+                  - img [ref=e551]
+                - generic [ref=e553]: 58,654 Ratings & 1,813 Reviews
+              - list [ref=e555]:
+                - listitem [ref=e556]: • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e557]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e558]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e559]: • 6000 mAh Battery
+                - listitem [ref=e560]: • Dimensity 6300 5G Processor
+                - listitem [ref=e561]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e562]:
+              - generic [ref=e564]:
+                - generic [ref=e565]: ₹12,999
+                - generic [ref=e566]: ₹14,999
+                - generic [ref=e567]: 13% off
+              - img [ref=e569]
+              - generic [ref=e571]:
+                - generic [ref=e572]: Upto
+                - generic [ref=e573]: ₹10,550
+                - generic [ref=e574]: Off on Exchange
+              - generic [ref=e577]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 64 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Titanium Gold, 64 GB) 4.4 43,677 Ratings & 1,266 Reviews • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹10,999 ₹12,999 15% off Upto ₹8,900 Off on Exchange Bank Offer" [ref=e582] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-titanium-gold-64-gb/p/itm9886d6e522c4b?pid=MOBHJ8QD9JTVTUEX&lid=LSTMOBHJ8QD9JTVTUEX4XVCAT&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHJ8QD9JTVTUEX.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e583]:
+            - img "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 64 GB)" [ref=e587]
+            - generic [ref=e593]: Add to Compare
+            - img [ref=e596]
+          - generic [ref=e598]:
+            - generic [ref=e599]:
+              - generic [ref=e600]: vivo T4 Lite 5G Charger in the Box (Titanium Gold, 64 GB)
+              - generic [ref=e601]:
+                - generic [ref=e603]:
+                  - text: "4.4"
+                  - img [ref=e604]
+                - generic [ref=e606]: 43,677 Ratings & 1,266 Reviews
+              - list [ref=e608]:
+                - listitem [ref=e609]: • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e610]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e611]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e612]: • 6000 mAh Battery
+                - listitem [ref=e613]: • Dimensity 6300 5G Processor
+                - listitem [ref=e614]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e615]:
+              - generic [ref=e617]:
+                - generic [ref=e618]: ₹10,999
+                - generic [ref=e619]: ₹12,999
+                - generic [ref=e620]: 15% off
+              - img [ref=e622]
+              - generic [ref=e624]:
+                - generic [ref=e625]: Upto
+                - generic [ref=e626]: ₹8,900
+                - generic [ref=e627]: Off on Exchange
+              - generic [ref=e630]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB) 4.4 43,677 Ratings & 1,266 Reviews • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹11,999 ₹13,999 14% off Upto ₹9,750 Off on Exchange Bank Offer" [ref=e635] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-titanium-gold-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9F2NKVDSYE&lid=LSTMOBHDY9F2NKVDSYENNGQ9C&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9F2NKVDSYE.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e636]:
+            - img "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB)" [ref=e640]
+            - generic [ref=e646]: Add to Compare
+            - img [ref=e649]
+          - generic [ref=e651]:
+            - generic [ref=e652]:
+              - generic [ref=e653]: vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB)
+              - generic [ref=e654]:
+                - generic [ref=e656]:
+                  - text: "4.4"
+                  - img [ref=e657]
+                - generic [ref=e659]: 43,677 Ratings & 1,266 Reviews
+              - list [ref=e661]:
+                - listitem [ref=e662]: • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e663]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e664]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e665]: • 6000 mAh Battery
+                - listitem [ref=e666]: • Dimensity 6300 5G Processor
+                - listitem [ref=e667]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e668]:
+              - generic [ref=e670]:
+                - generic [ref=e671]: ₹11,999
+                - generic [ref=e672]: ₹13,999
+                - generic [ref=e673]: 14% off
+              - img [ref=e675]
+              - generic [ref=e677]:
+                - generic [ref=e678]: Upto
+                - generic [ref=e679]: ₹9,750
+                - generic [ref=e680]: Off on Exchange
+              - generic [ref=e683]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB) 4.4 43,677 Ratings & 1,266 Reviews • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹11,999 ₹13,999 14% off Only 1 left Upto ₹9,750 Off on Exchange" [ref=e688] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-prism-blue-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FCZV9HPM9&lid=LSTMOBHDY9FCZV9HPM9WHT3DR&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9FCZV9HPM9.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e689]:
+            - img "vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB)" [ref=e693]
+            - generic [ref=e699]: Add to Compare
+            - img [ref=e702]
+          - generic [ref=e704]:
+            - generic [ref=e705]:
+              - generic [ref=e706]: vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB)
+              - generic [ref=e707]:
+                - generic [ref=e709]:
+                  - text: "4.4"
+                  - img [ref=e710]
+                - generic [ref=e712]: 43,677 Ratings & 1,266 Reviews
+              - list [ref=e714]:
+                - listitem [ref=e715]: • 4 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e716]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e717]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e718]: • 6000 mAh Battery
+                - listitem [ref=e719]: • Dimensity 6300 5G Processor
+                - listitem [ref=e720]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e721]:
+              - generic [ref=e723]:
+                - generic [ref=e724]: ₹11,999
+                - generic [ref=e725]: ₹13,999
+                - generic [ref=e726]: 14% off
+              - img [ref=e728]
+              - generic [ref=e731]: Only 1 left
+              - generic [ref=e733]:
+                - generic [ref=e734]: Upto
+                - generic [ref=e735]: ₹9,750
+                - generic [ref=e736]: Off on Exchange
+        - link "vivo T4 Lite 5G Charger in the Box (Prism Blue, 64 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Prism Blue, 64 GB) 4.4 43,677 Ratings & 1,266 Reviews • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹10,999 ₹12,999 15% off Upto ₹8,900 Off on Exchange Bank Offer" [ref=e741] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-prism-blue-64-gb/p/itm9886d6e522c4b?pid=MOBHJ8QDSPMWNJZ8&lid=LSTMOBHJ8QDSPMWNJZ85QSEQY&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHJ8QDSPMWNJZ8.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e742]:
+            - img "vivo T4 Lite 5G Charger in the Box (Prism Blue, 64 GB)" [ref=e746]
+            - generic [ref=e752]: Add to Compare
+            - img [ref=e755]
+          - generic [ref=e757]:
+            - generic [ref=e758]:
+              - generic [ref=e759]: vivo T4 Lite 5G Charger in the Box (Prism Blue, 64 GB)
+              - generic [ref=e760]:
+                - generic [ref=e762]:
+                  - text: "4.4"
+                  - img [ref=e763]
+                - generic [ref=e765]: 43,677 Ratings & 1,266 Reviews
+              - list [ref=e767]:
+                - listitem [ref=e768]: • 4 GB RAM | 64 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e769]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e770]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e771]: • 6000 mAh Battery
+                - listitem [ref=e772]: • Dimensity 6300 5G Processor
+                - listitem [ref=e773]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e774]:
+              - generic [ref=e776]:
+                - generic [ref=e777]: ₹10,999
+                - generic [ref=e778]: ₹12,999
+                - generic [ref=e779]: 15% off
+              - img [ref=e781]
+              - generic [ref=e783]:
+                - generic [ref=e784]: Upto
+                - generic [ref=e785]: ₹8,900
+                - generic [ref=e786]: Off on Exchange
+              - generic [ref=e789]: Bank Offer
+        - link "vivo T4x 5G (Pronto Purple, 128 GB) Add to Compare vivo T4x 5G (Pronto Purple, 128 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹16,499 ₹19,499 15% off Upto ₹13,250 Off on Exchange Bank Offer" [ref=e794] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-pronto-purple-128-gb/p/itm017656bdd097b?pid=MOBH9JUSZHCX3JRG&lid=LSTMOBH9JUSZHCX3JRGEPZVNT&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUSZHCX3JRG.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e795]:
+            - img "vivo T4x 5G (Pronto Purple, 128 GB)" [ref=e799]
+            - generic [ref=e805]: Add to Compare
+            - img [ref=e808]
+          - generic [ref=e810]:
+            - generic [ref=e811]:
+              - generic [ref=e812]: vivo T4x 5G (Pronto Purple, 128 GB)
+              - generic [ref=e813]:
+                - generic [ref=e815]:
+                  - text: "4.4"
+                  - img [ref=e816]
+                - generic [ref=e818]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e820]:
+                - listitem [ref=e821]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e822]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e823]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e824]: • 6500 mAh Battery
+                - listitem [ref=e825]: • Dimensity 7300 5G Processor
+                - listitem [ref=e826]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e827]:
+              - generic [ref=e829]:
+                - generic [ref=e830]: ₹16,499
+                - generic [ref=e831]: ₹19,499
+                - generic [ref=e832]: 15% off
+              - img [ref=e834]
+              - generic [ref=e836]:
+                - generic [ref=e837]: Upto
+                - generic [ref=e838]: ₹13,250
+                - generic [ref=e839]: Off on Exchange
+              - generic [ref=e842]: Bank Offer
+        - link "vivo T4x 5G (Glacial Teal, 128 GB) Add to Compare vivo T4x 5G (Glacial Teal, 128 GB) 4.5 2,06,357 Ratings & 9,021 Reviews • 6 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹15,499 ₹17,999 13% off Upto ₹12,650 Off on Exchange Bank Offer" [ref=e847] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-glacial-teal-128-gb/p/itm017656bdd097b?pid=MOBHFEWD3TGGW63X&lid=LSTMOBHFEWD3TGGW63XLBXC2N&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHFEWD3TGGW63X.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e848]:
+            - img "vivo T4x 5G (Glacial Teal, 128 GB)" [ref=e852]
+            - generic [ref=e858]: Add to Compare
+            - img [ref=e861]
+          - generic [ref=e863]:
+            - generic [ref=e864]:
+              - generic [ref=e865]: vivo T4x 5G (Glacial Teal, 128 GB)
+              - generic [ref=e866]:
+                - generic [ref=e868]:
+                  - text: "4.5"
+                  - img [ref=e869]
+                - generic [ref=e871]: 2,06,357 Ratings & 9,021 Reviews
+              - list [ref=e873]:
+                - listitem [ref=e874]: • 6 GB RAM | 128 GB ROM
+                - listitem [ref=e875]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e876]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e877]: • 6500 mAh Battery
+                - listitem [ref=e878]: • Dimensity 7300 5G Processor
+                - listitem [ref=e879]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e880]:
+              - generic [ref=e882]:
+                - generic [ref=e883]: ₹15,499
+                - generic [ref=e884]: ₹17,999
+                - generic [ref=e885]: 13% off
+              - img [ref=e887]
+              - generic [ref=e889]:
+                - generic [ref=e890]: Upto
+                - generic [ref=e891]: ₹12,650
+                - generic [ref=e892]: Off on Exchange
+              - generic [ref=e895]: Bank Offer
+        - link "vivo T4x 5G (Marine Blue, 256 GB) Add to Compare vivo T4x 5G (Marine Blue, 256 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 256 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹18,499 ₹20,999 11% off Upto ₹15,200 Off on Exchange Bank Offer" [ref=e900] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-marine-blue-256-gb/p/itm017656bdd097b?pid=MOBH9JUSKAADMZZN&lid=LSTMOBH9JUSKAADMZZNMWXBW1&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUSKAADMZZN.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e901]:
+            - img "vivo T4x 5G (Marine Blue, 256 GB)" [ref=e905]
+            - generic [ref=e911]: Add to Compare
+            - img [ref=e914]
+          - generic [ref=e916]:
+            - generic [ref=e917]:
+              - generic [ref=e918]: vivo T4x 5G (Marine Blue, 256 GB)
+              - generic [ref=e919]:
+                - generic [ref=e921]:
+                  - text: "4.4"
+                  - img [ref=e922]
+                - generic [ref=e924]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e926]:
+                - listitem [ref=e927]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e928]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e929]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e930]: • 6500 mAh Battery
+                - listitem [ref=e931]: • Dimensity 7300 5G Processor
+                - listitem [ref=e932]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e933]:
+              - generic [ref=e935]:
+                - generic [ref=e936]: ₹18,499
+                - generic [ref=e937]: ₹20,999
+                - generic [ref=e938]: 11% off
+              - img [ref=e940]
+              - generic [ref=e942]:
+                - generic [ref=e943]: Upto
+                - generic [ref=e944]: ₹15,200
+                - generic [ref=e945]: Off on Exchange
+              - generic [ref=e948]: Bank Offer
+        - link "vivo T4x 5G (Pronto Purple, 256 GB) Add to Compare vivo T4x 5G (Pronto Purple, 256 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 256 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹18,499 ₹20,999 11% off Upto ₹15,200 Off on Exchange Bank Offer" [ref=e953] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-pronto-purple-256-gb/p/itm017656bdd097b?pid=MOBH9JUS4GGGPJHJ&lid=LSTMOBH9JUS4GGGPJHJMC4C45&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBH9JUS4GGGPJHJ.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e954]:
+            - img "vivo T4x 5G (Pronto Purple, 256 GB)" [ref=e958]
+            - generic [ref=e964]: Add to Compare
+            - img [ref=e967]
+          - generic [ref=e969]:
+            - generic [ref=e970]:
+              - generic [ref=e971]: vivo T4x 5G (Pronto Purple, 256 GB)
+              - generic [ref=e972]:
+                - generic [ref=e974]:
+                  - text: "4.4"
+                  - img [ref=e975]
+                - generic [ref=e977]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e979]:
+                - listitem [ref=e980]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e981]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e982]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e983]: • 6500 mAh Battery
+                - listitem [ref=e984]: • Dimensity 7300 5G Processor
+                - listitem [ref=e985]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e986]:
+              - generic [ref=e988]:
+                - generic [ref=e989]: ₹18,499
+                - generic [ref=e990]: ₹20,999
+                - generic [ref=e991]: 11% off
+              - img [ref=e993]
+              - generic [ref=e995]:
+                - generic [ref=e996]: Upto
+                - generic [ref=e997]: ₹15,200
+                - generic [ref=e998]: Off on Exchange
+              - generic [ref=e1001]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Prism Blue, 256 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Prism Blue, 256 GB) 4.3 22,132 Ratings & 960 Reviews • 8 GB RAM | 256 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹14,999 ₹16,999 11% off Upto ₹12,200 Off on Exchange Bank Offer" [ref=e1006] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-prism-blue-256-gb/p/itm9886d6e522c4b?pid=MOBHDY9FPSBK8D4E&lid=LSTMOBHDY9FPSBK8D4EYRPEEB&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9FPSBK8D4E.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1007]:
+            - img "vivo T4 Lite 5G Charger in the Box (Prism Blue, 256 GB)" [ref=e1011]
+            - generic [ref=e1017]: Add to Compare
+            - img [ref=e1020]
+          - generic [ref=e1022]:
+            - generic [ref=e1023]:
+              - generic [ref=e1024]: vivo T4 Lite 5G Charger in the Box (Prism Blue, 256 GB)
+              - generic [ref=e1025]:
+                - generic [ref=e1027]:
+                  - text: "4.3"
+                  - img [ref=e1028]
+                - generic [ref=e1030]: 22,132 Ratings & 960 Reviews
+              - list [ref=e1032]:
+                - listitem [ref=e1033]: • 8 GB RAM | 256 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e1034]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e1035]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e1036]: • 6000 mAh Battery
+                - listitem [ref=e1037]: • Dimensity 6300 5G Processor
+                - listitem [ref=e1038]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1039]:
+              - generic [ref=e1041]:
+                - generic [ref=e1042]: ₹14,999
+                - generic [ref=e1043]: ₹16,999
+                - generic [ref=e1044]: 11% off
+              - img [ref=e1046]
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: Upto
+                - generic [ref=e1050]: ₹12,200
+                - generic [ref=e1051]: Off on Exchange
+              - generic [ref=e1054]: Bank Offer
+        - link "vivo T4x 5G (Glacial Teal, 128 GB) Add to Compare vivo T4x 5G (Glacial Teal, 128 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 128 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹16,499 ₹19,499 15% off Upto ₹13,250 Off on Exchange Bank Offer" [ref=e1059] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-glacial-teal-128-gb/p/itm017656bdd097b?pid=MOBHFEWDW4XHPCHC&lid=LSTMOBHFEWDW4XHPCHCKMGWKS&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHFEWDW4XHPCHC.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1060]:
+            - img "vivo T4x 5G (Glacial Teal, 128 GB)" [ref=e1064]
+            - generic [ref=e1070]: Add to Compare
+            - img [ref=e1073]
+          - generic [ref=e1075]:
+            - generic [ref=e1076]:
+              - generic [ref=e1077]: vivo T4x 5G (Glacial Teal, 128 GB)
+              - generic [ref=e1078]:
+                - generic [ref=e1080]:
+                  - text: "4.4"
+                  - img [ref=e1081]
+                - generic [ref=e1083]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e1085]:
+                - listitem [ref=e1086]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e1087]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e1088]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e1089]: • 6500 mAh Battery
+                - listitem [ref=e1090]: • Dimensity 7300 5G Processor
+                - listitem [ref=e1091]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e1092]:
+              - generic [ref=e1094]:
+                - generic [ref=e1095]: ₹16,499
+                - generic [ref=e1096]: ₹19,499
+                - generic [ref=e1097]: 15% off
+              - img [ref=e1099]
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: Upto
+                - generic [ref=e1103]: ₹13,250
+                - generic [ref=e1104]: Off on Exchange
+              - generic [ref=e1107]: Bank Offer
+        - link "vivo T4 5G (Emerald Blaze, 256 GB) Add to Compare vivo T4 5G (Emerald Blaze, 256 GB) 4.5 23,255 Ratings & 1,233 Reviews • 12 GB RAM | 256 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 7300 mAh Battery • Snapdragon 7s Gen 3 5G Processor • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories ₹26,999 ₹29,999 10% off Upto ₹22,150 Off on Exchange Bank Offer" [ref=e1112] [cursor=pointer]:
+          - /url: /vivo-t4-5g-emerald-blaze-256-gb/p/itmc2634fd4daeb9?pid=MOBHATXZTSN6GQXH&lid=LSTMOBHATXZTSN6GQXHGQLWZ4&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHATXZTSN6GQXH.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1113]:
+            - img "vivo T4 5G (Emerald Blaze, 256 GB)" [ref=e1117]
+            - generic [ref=e1123]: Add to Compare
+            - img [ref=e1126]
+          - generic [ref=e1128]:
+            - generic [ref=e1129]:
+              - generic [ref=e1130]: vivo T4 5G (Emerald Blaze, 256 GB)
+              - generic [ref=e1131]:
+                - generic [ref=e1133]:
+                  - text: "4.5"
+                  - img [ref=e1134]
+                - generic [ref=e1136]: 23,255 Ratings & 1,233 Reviews
+              - list [ref=e1138]:
+                - listitem [ref=e1139]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=e1140]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1141]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1142]: • 7300 mAh Battery
+                - listitem [ref=e1143]: • Snapdragon 7s Gen 3 5G Processor
+                - listitem [ref=e1144]: • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories
+            - generic [ref=e1145]:
+              - generic [ref=e1147]:
+                - generic [ref=e1148]: ₹26,999
+                - generic [ref=e1149]: ₹29,999
+                - generic [ref=e1150]: 10% off
+              - img [ref=e1152]
+              - generic [ref=e1154]:
+                - generic [ref=e1155]: Upto
+                - generic [ref=e1156]: ₹22,150
+                - generic [ref=e1157]: Off on Exchange
+              - generic [ref=e1160]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB) 4.4 58,654 Ratings & 1,813 Reviews • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹12,999 ₹14,999 13% off Upto ₹10,550 Off on Exchange Bank Offer" [ref=e1165] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-titanium-gold-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FWXVJYCFM&lid=LSTMOBHDY9FWXVJYCFMHXZJVU&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9FWXVJYCFM.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1166]:
+            - img "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB)" [ref=e1170]
+            - generic [ref=e1176]: Add to Compare
+            - img [ref=e1179]
+          - generic [ref=e1181]:
+            - generic [ref=e1182]:
+              - generic [ref=e1183]: vivo T4 Lite 5G Charger in the Box (Titanium Gold, 128 GB)
+              - generic [ref=e1184]:
+                - generic [ref=e1186]:
+                  - text: "4.4"
+                  - img [ref=e1187]
+                - generic [ref=e1189]: 58,654 Ratings & 1,813 Reviews
+              - list [ref=e1191]:
+                - listitem [ref=e1192]: • 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e1193]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e1194]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e1195]: • 6000 mAh Battery
+                - listitem [ref=e1196]: • Dimensity 6300 5G Processor
+                - listitem [ref=e1197]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1198]:
+              - generic [ref=e1200]:
+                - generic [ref=e1201]: ₹12,999
+                - generic [ref=e1202]: ₹14,999
+                - generic [ref=e1203]: 13% off
+              - img [ref=e1205]
+              - generic [ref=e1207]:
+                - generic [ref=e1208]: Upto
+                - generic [ref=e1209]: ₹10,550
+                - generic [ref=e1210]: Off on Exchange
+              - generic [ref=e1213]: Bank Offer
+        - link "vivo T4 5G (Emerald Blaze, 128 GB) Add to Compare vivo T4 5G (Emerald Blaze, 128 GB) 4.5 95,128 Ratings & 4,239 Reviews • 8 GB RAM | 128 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 7300 mAh Battery • Snapdragon 7s Gen 3 5G Processor • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories ₹22,999 ₹25,999 11% off Upto ₹18,950 Off on Exchange Bank Offer" [ref=e1218] [cursor=pointer]:
+          - /url: /vivo-t4-5g-emerald-blaze-128-gb/p/itmc2634fd4daeb9?pid=MOBHATXZYSHYH6ZP&lid=LSTMOBHATXZYSHYH6ZPRDXNR0&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHATXZYSHYH6ZP.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1219]:
+            - img "vivo T4 5G (Emerald Blaze, 128 GB)" [ref=e1223]
+            - generic [ref=e1229]: Add to Compare
+            - img [ref=e1232]
+          - generic [ref=e1234]:
+            - generic [ref=e1235]:
+              - generic [ref=e1236]: vivo T4 5G (Emerald Blaze, 128 GB)
+              - generic [ref=e1237]:
+                - generic [ref=e1239]:
+                  - text: "4.5"
+                  - img [ref=e1240]
+                - generic [ref=e1242]: 95,128 Ratings & 4,239 Reviews
+              - list [ref=e1244]:
+                - listitem [ref=e1245]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e1246]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1247]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1248]: • 7300 mAh Battery
+                - listitem [ref=e1249]: • Snapdragon 7s Gen 3 5G Processor
+                - listitem [ref=e1250]: • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories
+            - generic [ref=e1251]:
+              - generic [ref=e1253]:
+                - generic [ref=e1254]: ₹22,999
+                - generic [ref=e1255]: ₹25,999
+                - generic [ref=e1256]: 11% off
+              - img [ref=e1258]
+              - generic [ref=e1260]:
+                - generic [ref=e1261]: Upto
+                - generic [ref=e1262]: ₹18,950
+                - generic [ref=e1263]: Off on Exchange
+              - generic [ref=e1266]: Bank Offer
+        - link "vivo T4R 5G (Twilight Blue, 256 GB) Add to Compare vivo T4R 5G (Twilight Blue, 256 GB) 4.5 54,823 Ratings & 2,450 Reviews • 8 GB RAM | 256 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 5700 mAh Battery • Dimensity 7400 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹22,999 ₹24,999 8% off Upto ₹18,950 Off on Exchange Bank Offer" [ref=e1271] [cursor=pointer]:
+          - /url: /vivo-t4r-5g-twilight-blue-256-gb/p/itm3a5653667cb9c?pid=MOBHE49GFMXQ5QEG&lid=LSTMOBHE49GFMXQ5QEGZPB4G9&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHE49GFMXQ5QEG.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1272]:
+            - img "vivo T4R 5G (Twilight Blue, 256 GB)" [ref=e1276]
+            - generic [ref=e1282]: Add to Compare
+            - img [ref=e1285]
+          - generic [ref=e1287]:
+            - generic [ref=e1288]:
+              - generic [ref=e1289]: vivo T4R 5G (Twilight Blue, 256 GB)
+              - generic [ref=e1290]:
+                - generic [ref=e1292]:
+                  - text: "4.5"
+                  - img [ref=e1293]
+                - generic [ref=e1295]: 54,823 Ratings & 2,450 Reviews
+              - list [ref=e1297]:
+                - listitem [ref=e1298]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1299]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1300]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1301]: • 5700 mAh Battery
+                - listitem [ref=e1302]: • Dimensity 7400 5G Processor
+                - listitem [ref=e1303]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1304]:
+              - generic [ref=e1306]:
+                - generic [ref=e1307]: ₹22,999
+                - generic [ref=e1308]: ₹24,999
+                - generic [ref=e1309]: 8% off
+              - img [ref=e1311]
+              - generic [ref=e1313]:
+                - generic [ref=e1314]: Upto
+                - generic [ref=e1315]: ₹18,950
+                - generic [ref=e1316]: Off on Exchange
+              - generic [ref=e1319]: Bank Offer
+        - link "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 256 GB) Add to Compare vivo T4 Lite 5G Charger in the Box (Titanium Gold, 256 GB) 4.3 22,132 Ratings & 960 Reviews • 8 GB RAM | 256 GB ROM | Expandable Upto 2 TB • 17.12 cm (6.74 inch) HD+ Display • 50MP + 2MP | 5MP Front Camera • 6000 mAh Battery • Dimensity 6300 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹14,999 ₹16,999 11% off Upto ₹12,200 Off on Exchange Bank Offer" [ref=e1324] [cursor=pointer]:
+          - /url: /vivo-t4-lite-5g-charger-box-titanium-gold-256-gb/p/itm9886d6e522c4b?pid=MOBHDY9FNTHSYQCV&lid=LSTMOBHDY9FNTHSYQCVKD0GFP&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHDY9FNTHSYQCV.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1325]:
+            - img "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 256 GB)" [ref=e1329]
+            - generic [ref=e1335]: Add to Compare
+            - img [ref=e1338]
+          - generic [ref=e1340]:
+            - generic [ref=e1341]:
+              - generic [ref=e1342]: vivo T4 Lite 5G Charger in the Box (Titanium Gold, 256 GB)
+              - generic [ref=e1343]:
+                - generic [ref=e1345]:
+                  - text: "4.3"
+                  - img [ref=e1346]
+                - generic [ref=e1348]: 22,132 Ratings & 960 Reviews
+              - list [ref=e1350]:
+                - listitem [ref=e1351]: • 8 GB RAM | 256 GB ROM | Expandable Upto 2 TB
+                - listitem [ref=e1352]: • 17.12 cm (6.74 inch) HD+ Display
+                - listitem [ref=e1353]: • 50MP + 2MP | 5MP Front Camera
+                - listitem [ref=e1354]: • 6000 mAh Battery
+                - listitem [ref=e1355]: • Dimensity 6300 5G Processor
+                - listitem [ref=e1356]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1357]:
+              - generic [ref=e1359]:
+                - generic [ref=e1360]: ₹14,999
+                - generic [ref=e1361]: ₹16,999
+                - generic [ref=e1362]: 11% off
+              - img [ref=e1364]
+              - generic [ref=e1366]:
+                - generic [ref=e1367]: Upto
+                - generic [ref=e1368]: ₹12,200
+                - generic [ref=e1369]: Off on Exchange
+              - generic [ref=e1372]: Bank Offer
+        - link "vivo T4 5G (Phantom Grey, 256 GB) Add to Compare vivo T4 5G (Phantom Grey, 256 GB) 4.5 95,128 Ratings & 4,239 Reviews • 8 GB RAM | 256 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 7300 mAh Battery • Snapdragon 7s Gen 3 5G Processor • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories ₹24,999 ₹27,999 10% off Upto ₹20,200 Off on Exchange Bank Offer" [ref=e1377] [cursor=pointer]:
+          - /url: /vivo-t4-5g-phantom-grey-256-gb/p/itmc2634fd4daeb9?pid=MOBHATXZGEAN2FWT&lid=LSTMOBHATXZGEAN2FWT6HQWPH&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHATXZGEAN2FWT.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1378]:
+            - img "vivo T4 5G (Phantom Grey, 256 GB)" [ref=e1382]
+            - generic [ref=e1388]: Add to Compare
+            - img [ref=e1391]
+          - generic [ref=e1393]:
+            - generic [ref=e1394]:
+              - generic [ref=e1395]: vivo T4 5G (Phantom Grey, 256 GB)
+              - generic [ref=e1396]:
+                - generic [ref=e1398]:
+                  - text: "4.5"
+                  - img [ref=e1399]
+                - generic [ref=e1401]: 95,128 Ratings & 4,239 Reviews
+              - list [ref=e1403]:
+                - listitem [ref=e1404]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1405]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1406]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1407]: • 7300 mAh Battery
+                - listitem [ref=e1408]: • Snapdragon 7s Gen 3 5G Processor
+                - listitem [ref=e1409]: • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories
+            - generic [ref=e1410]:
+              - generic [ref=e1412]:
+                - generic [ref=e1413]: ₹24,999
+                - generic [ref=e1414]: ₹27,999
+                - generic [ref=e1415]: 10% off
+              - img [ref=e1417]
+              - generic [ref=e1419]:
+                - generic [ref=e1420]: Upto
+                - generic [ref=e1421]: ₹20,200
+                - generic [ref=e1422]: Off on Exchange
+              - generic [ref=e1425]: Bank Offer
+        - link "vivo T4x 5G (Glacial Teal, 256 GB) Add to Compare vivo T4x 5G (Glacial Teal, 256 GB) 4.4 1,55,288 Ratings & 7,291 Reviews • 8 GB RAM | 256 GB ROM • 17.07 cm (6.72 inch) Display • 50MP + 2MP | 8MP Front Camera • 6500 mAh Battery • Dimensity 7300 5G Processor • 1 Year Warranty for Device and 6 Months Warranty for Accessories ₹18,499 ₹20,999 11% off Upto ₹15,200 Off on Exchange Bank Offer" [ref=e1430] [cursor=pointer]:
+          - /url: /vivo-t4x-5g-glacial-teal-256-gb/p/itm017656bdd097b?pid=MOBHFEWD8U7VBY9E&lid=LSTMOBHFEWD8U7VBY9EAKM0QU&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHFEWD8U7VBY9E.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1431]:
+            - img "vivo T4x 5G (Glacial Teal, 256 GB)" [ref=e1435]
+            - generic [ref=e1441]: Add to Compare
+            - img [ref=e1444]
+          - generic [ref=e1446]:
+            - generic [ref=e1447]:
+              - generic [ref=e1448]: vivo T4x 5G (Glacial Teal, 256 GB)
+              - generic [ref=e1449]:
+                - generic [ref=e1451]:
+                  - text: "4.4"
+                  - img [ref=e1452]
+                - generic [ref=e1454]: 1,55,288 Ratings & 7,291 Reviews
+              - list [ref=e1456]:
+                - listitem [ref=e1457]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1458]: • 17.07 cm (6.72 inch) Display
+                - listitem [ref=e1459]: • 50MP + 2MP | 8MP Front Camera
+                - listitem [ref=e1460]: • 6500 mAh Battery
+                - listitem [ref=e1461]: • Dimensity 7300 5G Processor
+                - listitem [ref=e1462]: • 1 Year Warranty for Device and 6 Months Warranty for Accessories
+            - generic [ref=e1463]:
+              - generic [ref=e1465]:
+                - generic [ref=e1466]: ₹18,499
+                - generic [ref=e1467]: ₹20,999
+                - generic [ref=e1468]: 11% off
+              - img [ref=e1470]
+              - generic [ref=e1472]:
+                - generic [ref=e1473]: Upto
+                - generic [ref=e1474]: ₹15,200
+                - generic [ref=e1475]: Off on Exchange
+              - generic [ref=e1478]: Bank Offer
+        - link "vivo T4 5G (Phantom Grey, 128 GB) Add to Compare vivo T4 5G (Phantom Grey, 128 GB) 4.5 95,128 Ratings & 4,239 Reviews • 8 GB RAM | 128 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 7300 mAh Battery • Snapdragon 7s Gen 3 5G Processor • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories ₹22,999 ₹25,999 11% off Upto ₹18,950 Off on Exchange Bank Offer" [ref=e1483] [cursor=pointer]:
+          - /url: /vivo-t4-5g-phantom-grey-128-gb/p/itmc2634fd4daeb9?pid=MOBHATXZS3WN8FZ2&lid=LSTMOBHATXZS3WN8FZ2QVICHA&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHATXZS3WN8FZ2.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1484]:
+            - img "vivo T4 5G (Phantom Grey, 128 GB)" [ref=e1488]
+            - generic [ref=e1494]: Add to Compare
+            - img [ref=e1497]
+          - generic [ref=e1499]:
+            - generic [ref=e1500]:
+              - generic [ref=e1501]: vivo T4 5G (Phantom Grey, 128 GB)
+              - generic [ref=e1502]:
+                - generic [ref=e1504]:
+                  - text: "4.5"
+                  - img [ref=e1505]
+                - generic [ref=e1507]: 95,128 Ratings & 4,239 Reviews
+              - list [ref=e1509]:
+                - listitem [ref=e1510]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e1511]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1512]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1513]: • 7300 mAh Battery
+                - listitem [ref=e1514]: • Snapdragon 7s Gen 3 5G Processor
+                - listitem [ref=e1515]: • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories
+            - generic [ref=e1516]:
+              - generic [ref=e1518]:
+                - generic [ref=e1519]: ₹22,999
+                - generic [ref=e1520]: ₹25,999
+                - generic [ref=e1521]: 11% off
+              - img [ref=e1523]
+              - generic [ref=e1525]:
+                - generic [ref=e1526]: Upto
+                - generic [ref=e1527]: ₹18,950
+                - generic [ref=e1528]: Off on Exchange
+              - generic [ref=e1531]: Bank Offer
+        - link "vivo T4R 5G (Twilight Blue, 128 GB) Add to Compare vivo T4R 5G (Twilight Blue, 128 GB) 4.5 54,823 Ratings & 2,450 Reviews • 8 GB RAM | 128 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 5700 mAh Battery • Dimensity 7400 5G Processor • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories ₹20,999 ₹23,499 10% off Upto ₹17,100 Off on Exchange Bank Offer" [ref=e1536] [cursor=pointer]:
+          - /url: /vivo-t4r-5g-twilight-blue-128-gb/p/itm3a5653667cb9c?pid=MOBHE49GBV6UYFZ5&lid=LSTMOBHE49GBV6UYFZ5KZZ7IG&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHE49GBV6UYFZ5.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1537]:
+            - img "vivo T4R 5G (Twilight Blue, 128 GB)" [ref=e1541]
+            - generic [ref=e1547]: Add to Compare
+            - img [ref=e1550]
+          - generic [ref=e1552]:
+            - generic [ref=e1553]:
+              - generic [ref=e1554]: vivo T4R 5G (Twilight Blue, 128 GB)
+              - generic [ref=e1555]:
+                - generic [ref=e1557]:
+                  - text: "4.5"
+                  - img [ref=e1558]
+                - generic [ref=e1560]: 54,823 Ratings & 2,450 Reviews
+              - list [ref=e1562]:
+                - listitem [ref=e1563]: • 8 GB RAM | 128 GB ROM
+                - listitem [ref=e1564]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1565]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1566]: • 5700 mAh Battery
+                - listitem [ref=e1567]: • Dimensity 7400 5G Processor
+                - listitem [ref=e1568]: • 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories
+            - generic [ref=e1569]:
+              - generic [ref=e1571]:
+                - generic [ref=e1572]: ₹20,999
+                - generic [ref=e1573]: ₹23,499
+                - generic [ref=e1574]: 10% off
+              - img [ref=e1576]
+              - generic [ref=e1578]:
+                - generic [ref=e1579]: Upto
+                - generic [ref=e1580]: ₹17,100
+                - generic [ref=e1581]: Off on Exchange
+              - generic [ref=e1584]: Bank Offer
+        - link "vivo T4 5G (Emerald Blaze, 256 GB) Add to Compare vivo T4 5G (Emerald Blaze, 256 GB) 4.5 95,128 Ratings & 4,239 Reviews • 8 GB RAM | 256 GB ROM • 17.2 cm (6.77 inch) Display • 50MP (OIS) + 2MP | 32MP Front Camera • 7300 mAh Battery • Snapdragon 7s Gen 3 5G Processor • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories ₹24,999 ₹27,999 10% off Upto ₹20,200 Off on Exchange Bank Offer" [ref=e1589] [cursor=pointer]:
+          - /url: /vivo-t4-5g-emerald-blaze-256-gb/p/itmc2634fd4daeb9?pid=MOBHATXZRTQ465X9&lid=LSTMOBHATXZRTQ465X9GYZRWI&marketplace=FLIPKART&q=Vivo+5g+Mobiles&store=tyy%2F4io&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=395b0e18-87bf-41f9-8a9a-c4970f23d997.MOBHATXZRTQ465X9.SEARCH&ppt=hp&ppn=homepage&ssid=ww1igiolg00000001769743329323&qH=d964e278b0675514
+          - generic [ref=e1590]:
+            - img "vivo T4 5G (Emerald Blaze, 256 GB)" [ref=e1594]
+            - generic [ref=e1600]: Add to Compare
+            - img [ref=e1603]
+          - generic [ref=e1605]:
+            - generic [ref=e1606]:
+              - generic [ref=e1607]: vivo T4 5G (Emerald Blaze, 256 GB)
+              - generic [ref=e1608]:
+                - generic [ref=e1610]:
+                  - text: "4.5"
+                  - img [ref=e1611]
+                - generic [ref=e1613]: 95,128 Ratings & 4,239 Reviews
+              - list [ref=e1615]:
+                - listitem [ref=e1616]: • 8 GB RAM | 256 GB ROM
+                - listitem [ref=e1617]: • 17.2 cm (6.77 inch) Display
+                - listitem [ref=e1618]: • 50MP (OIS) + 2MP | 32MP Front Camera
+                - listitem [ref=e1619]: • 7300 mAh Battery
+                - listitem [ref=e1620]: • Snapdragon 7s Gen 3 5G Processor
+                - listitem [ref=e1621]: • 1 Year Warranty on the Handset and 6 Months Warranty on Inbox Accessories
+            - generic [ref=e1622]:
+              - generic [ref=e1624]:
+                - generic [ref=e1625]: ₹24,999
+                - generic [ref=e1626]: ₹27,999
+                - generic [ref=e1627]: 10% off
+              - img [ref=e1629]
+              - generic [ref=e1631]:
+                - generic [ref=e1632]: Upto
+                - generic [ref=e1633]: ₹20,200
+                - generic [ref=e1634]: Off on Exchange
+              - generic [ref=e1637]: Bank Offer
+        - generic [ref=e1640]:
+          - generic [ref=e1641]: Page 1 of 26
+          - navigation [ref=e1642]:
+            - link "1" [ref=e1643] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=e1644] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=e1645] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=e1646] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=e1647] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=e1648] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=e1649] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=e1650] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=e1651] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=e1652] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=e1653] [cursor=pointer]:
+              - /url: /search?q=Vivo+5g+Mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=e1655]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1656]:
+            - generic [ref=e1657] [cursor=pointer]: "Yes"
+            - generic [ref=e1658] [cursor=pointer]: "No"
+    - generic [ref=e1660]:
+      - generic [ref=e1661]: Reviews for Popular Mobiles
+      - generic [ref=e1662]:
+        - generic [ref=e1663]:
+          - generic [ref=e1665]:
+            - img "vivo T4R 5G (Twilight Blue, 256 GB)"
+          - generic [ref=e1666]:
+            - link "1. vivo T4R 5G (Twilight Blue,... 4.5 54,823 Ratings&2,450 Reviews ₹22,999 8% off" [ref=e1667] [cursor=pointer]:
+              - /url: /vivo-t4r-5g-twilight-blue-256-gb/p/itm3a5653667cb9c?pid=MOBHE49GFMXQ5QEG&marketplace=FLIPKART
+              - generic [ref=e1669]: 1. vivo T4R 5G (Twilight Blue,...
+              - generic [ref=e1670]:
+                - generic [ref=e1671]:
+                  - text: "4.5"
+                  - img [ref=e1672]
+                - generic [ref=e1673]:
+                  - text: 54,823 Ratings
+                  - generic [ref=e1674]: "&2,450 Reviews"
+              - generic [ref=e1676]:
+                - generic [ref=e1677]: ₹22,999
+                - generic [ref=e1678]: 8% off
+            - list [ref=e1679]:
+              - listitem [ref=e1680]: 8 GB RAM | 256 GB ROM
+              - listitem [ref=e1681]: 17.2 cm (6.77 inch) Display
+              - listitem [ref=e1682]: 50MP (OIS) + 2MP | 32MP Front Camera
+        - generic [ref=e1683]:
+          - generic [ref=e1684]: Most Helpful Review
+          - generic [ref=e1686]:
+            - generic [ref=e1687]:
+              - generic [ref=e1688]:
+                - text: "5"
+                - img [ref=e1689]
+              - paragraph [ref=e1690]: Great product
+            - generic [ref=e1694]:
+              - text: Excellent looks premium
+              - text: Display quality good
+              - text: Nice product 👌
+            - generic [ref=e1696]:
+              - paragraph [ref=e1697]: Ritik Rashan Ram
+              - img [ref=e1698]
+              - paragraph [ref=e1702]: Certified Buyer
+              - paragraph [ref=e1703]: 5 months ago
+        - generic [ref=e1704]:
+          - generic [ref=e1705]: Recent Review
+          - generic [ref=e1707]:
+            - generic [ref=e1708]:
+              - generic [ref=e1709]:
+                - text: "5"
+                - img [ref=e1710]
+              - paragraph [ref=e1711]: Best in the market!
+            - generic [ref=e1715]: Very good 😊🫵 phone All Good quality
+            - generic [ref=e1717]:
+              - paragraph [ref=e1718]: Satish yadav
+              - img [ref=e1719]
+              - paragraph [ref=e1723]: Certified Buyer
+              - paragraph [ref=e1724]: Today
+      - generic [ref=e1725]:
+        - generic [ref=e1726]:
+          - generic [ref=e1728]:
+            - img "vivo T4 5G (Emerald Blaze, 256 GB)"
+          - generic [ref=e1729]:
+            - link "2. vivo T4 5G (Emerald Blaze, ... 4.5 23,255 Ratings&1,233 Reviews ₹26,999 10% off" [ref=e1730] [cursor=pointer]:
+              - /url: /vivo-t4-5g-emerald-blaze-256-gb/p/itmc2634fd4daeb9?pid=MOBHATXZTSN6GQXH&marketplace=FLIPKART
+              - generic [ref=e1732]: 2. vivo T4 5G (Emerald Blaze, ...
+              - generic [ref=e1733]:
+                - generic [ref=e1734]:
+                  - text: "4.5"
+                  - img [ref=e1735]
+                - generic [ref=e1736]:
+                  - text: 23,255 Ratings
+                  - generic [ref=e1737]: "&1,233 Reviews"
+              - generic [ref=e1739]:
+                - generic [ref=e1740]: ₹26,999
+                - generic [ref=e1741]: 10% off
+            - list [ref=e1742]:
+              - listitem [ref=e1743]: 12 GB RAM | 256 GB ROM
+              - listitem [ref=e1744]: 17.2 cm (6.77 inch) Display
+              - listitem [ref=e1745]: 50MP (OIS) + 2MP | 32MP Front Camera
+        - generic [ref=e1746]:
+          - generic [ref=e1747]: Most Helpful Review
+          - generic [ref=e1749]:
+            - generic [ref=e1750]:
+              - generic [ref=e1751]:
+                - text: "5"
+                - img [ref=e1752]
+              - paragraph [ref=e1753]: Great product
+            - generic [ref=e1757]: Great performance vivo I am satisfied 10/9 grade
+            - generic [ref=e1759]:
+              - paragraph [ref=e1760]: Amit Gupta
+              - img [ref=e1761]
+              - paragraph [ref=e1765]: Certified Buyer
+              - paragraph [ref=e1766]: 8 months ago
+        - generic [ref=e1767]:
+          - generic [ref=e1768]: Recent Review
+          - generic [ref=e1770]:
+            - generic [ref=e1771]:
+              - generic [ref=e1772]:
+                - text: "5"
+                - img [ref=e1773]
+              - paragraph [ref=e1774]: Best in the market!
+            - generic [ref=e1778]: Worth it. Good battery life
+            - generic [ref=e1780]:
+              - paragraph [ref=e1781]: Santhosh Chary
+              - img [ref=e1782]
+              - paragraph [ref=e1786]: Certified Buyer
+              - paragraph [ref=e1787]: 1 day ago
+      - generic [ref=e1788]:
+        - generic [ref=e1789]:
+          - generic [ref=e1791]:
+            - img "vivo T4x 5G (Pronto Purple, 128 GB)"
+          - generic [ref=e1792]:
+            - link "3. vivo T4x 5G (Pronto Purple,... 4.5 2,06,357 Ratings&9,021 Reviews ₹15,499 13% off" [ref=e1793] [cursor=pointer]:
+              - /url: /vivo-t4x-5g-pronto-purple-128-gb/p/itm017656bdd097b?pid=MOBH9JUSZFBNVDXM&marketplace=FLIPKART
+              - generic [ref=e1795]: 3. vivo T4x 5G (Pronto Purple,...
+              - generic [ref=e1796]:
+                - generic [ref=e1797]:
+                  - text: "4.5"
+                  - img [ref=e1798]
+                - generic [ref=e1799]:
+                  - text: 2,06,357 Ratings
+                  - generic [ref=e1800]: "&9,021 Reviews"
+              - generic [ref=e1802]:
+                - generic [ref=e1803]: ₹15,499
+                - generic [ref=e1804]: 13% off
+            - list [ref=e1805]:
+              - listitem [ref=e1806]: 6 GB RAM | 128 GB ROM
+              - listitem [ref=e1807]: 17.07 cm (6.72 inch) Display
+              - listitem [ref=e1808]: 50MP + 2MP | 8MP Front Camera
+        - generic [ref=e1809]:
+          - generic [ref=e1810]: Most Helpful Review
+          - generic [ref=e1812]:
+            - generic [ref=e1813]:
+              - generic [ref=e1814]:
+                - text: "5"
+                - img [ref=e1815]
+              - paragraph [ref=e1816]: Super!
+            - generic [ref=e1820]: Thanks vivo thanks flipkart 😊
+            - generic [ref=e1822]:
+              - paragraph [ref=e1823]: Flipkart Customer
+              - img [ref=e1824]
+              - paragraph [ref=e1828]: Certified Buyer
+              - paragraph [ref=e1829]: 5 months ago
+        - generic [ref=e1830]:
+          - generic [ref=e1831]: Recent Review
+          - generic [ref=e1833]:
+            - generic [ref=e1834]:
+              - generic [ref=e1835]:
+                - text: "1"
+                - img [ref=e1836]
+              - paragraph [ref=e1837]: Not recommended at all
+            - generic [ref=e1841]: Network and Camara issues
+            - generic [ref=e1843]:
+              - paragraph [ref=e1844]: Sk Mojafar Alli
+              - img [ref=e1845]
+              - paragraph [ref=e1849]: Certified Buyer
+              - paragraph [ref=e1850]: 1 day ago
+      - generic [ref=e1851]:
+        - generic [ref=e1852]:
+          - generic [ref=e1854]:
+            - img "vivo T4 Lite 5G Charger in the Box (Prism Blue, 128 GB)"
+          - generic [ref=e1855]:
+            - link "4. vivo T4 Lite 5G Charger in ... 4.4 58,654 Ratings&1,813 Reviews ₹12,999 13% off" [ref=e1856] [cursor=pointer]:
+              - /url: /vivo-t4-lite-5g-charger-box-prism-blue-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FP7WFPCEE&marketplace=FLIPKART
+              - generic [ref=e1858]: 4. vivo T4 Lite 5G Charger in ...
+              - generic [ref=e1859]:
+                - generic [ref=e1860]:
+                  - text: "4.4"
+                  - img [ref=e1861]
+                - generic [ref=e1862]:
+                  - text: 58,654 Ratings
+                  - generic [ref=e1863]: "&1,813 Reviews"
+              - generic [ref=e1865]:
+                - generic [ref=e1866]: ₹12,999
+                - generic [ref=e1867]: 13% off
+            - list [ref=e1868]:
+              - listitem [ref=e1869]: 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB
+              - listitem [ref=e1870]: 17.12 cm (6.74 inch) HD+ Display
+              - listitem [ref=e1871]: 50MP + 2MP | 5MP Front Camera
+        - generic [ref=e1872]:
+          - generic [ref=e1873]: Most Helpful Review
+          - generic [ref=e1875]:
+            - generic [ref=e1876]:
+              - generic [ref=e1877]:
+                - text: "4"
+                - img [ref=e1878]
+              - paragraph [ref=e1879]: Pretty good
+            - generic [ref=e1883]:
+              - text: Battery very good
+              - text: Camera good
+            - generic [ref=e1885]:
+              - paragraph [ref=e1886]: Flipkart Customer
+              - img [ref=e1887]
+              - paragraph [ref=e1891]: Certified Buyer
+              - paragraph [ref=e1892]: 6 months ago
+        - generic [ref=e1893]:
+          - generic [ref=e1894]: Recent Review
+          - generic [ref=e1896]:
+            - generic [ref=e1897]:
+              - generic [ref=e1898]:
+                - text: "4"
+                - img [ref=e1899]
+              - paragraph [ref=e1900]: Worth the money
+            - generic [ref=e1904]: Good phone but,, camera and charger is very low
+            - generic [ref=e1906]:
+              - paragraph [ref=e1907]: Ankit Kumar
+              - img [ref=e1908]
+              - paragraph [ref=e1912]: Certified Buyer
+              - paragraph [ref=e1913]: 1 day ago
+      - generic [ref=e1914]:
+        - generic [ref=e1915]:
+          - generic [ref=e1917]:
+            - img "vivo T4 Lite 5G Charger in the Box (Titanium Gold, 256 GB)"
+          - generic [ref=e1918]:
+            - link "5. vivo T4 Lite 5G Charger in ... 4.3 22,132 Ratings&960 Reviews ₹14,999 11% off" [ref=e1919] [cursor=pointer]:
+              - /url: /vivo-t4-lite-5g-charger-box-titanium-gold-256-gb/p/itm9886d6e522c4b?pid=MOBHDY9FNTHSYQCV&marketplace=FLIPKART
+              - generic [ref=e1921]: 5. vivo T4 Lite 5G Charger in ...
+              - generic [ref=e1922]:
+                - generic [ref=e1923]:
+                  - text: "4.3"
+                  - img [ref=e1924]
+                - generic [ref=e1925]:
+                  - text: 22,132 Ratings
+                  - generic [ref=e1926]: "&960 Reviews"
+              - generic [ref=e1928]:
+                - generic [ref=e1929]: ₹14,999
+                - generic [ref=e1930]: 11% off
+            - list [ref=e1931]:
+              - listitem [ref=e1932]: 8 GB RAM | 256 GB ROM | Expandable Upto 2 TB
+              - listitem [ref=e1933]: 17.12 cm (6.74 inch) HD+ Display
+              - listitem [ref=e1934]: 50MP + 2MP | 5MP Front Camera
+        - generic [ref=e1935]:
+          - generic [ref=e1936]: Most Helpful Review
+          - generic [ref=e1938]:
+            - generic [ref=e1939]:
+              - generic [ref=e1940]:
+                - text: "5"
+                - img [ref=e1941]
+              - paragraph [ref=e1942]: Best in the market!
+            - generic [ref=e1946]: Super slime super fast mobile 💯
+            - generic [ref=e1948]:
+              - paragraph [ref=e1949]: SSQ
+              - img [ref=e1950]
+              - paragraph [ref=e1954]: Certified Buyer
+              - paragraph [ref=e1955]: 6 months ago
+        - generic [ref=e1956]:
+          - generic [ref=e1957]: Recent Review
+          - generic [ref=e1959]:
+            - generic [ref=e1960]:
+              - generic [ref=e1961]:
+                - text: "5"
+                - img [ref=e1962]
+              - paragraph [ref=e1963]: Classy product
+            - generic [ref=e1967]: Very good product , Thanks Flipkart
+            - generic [ref=e1969]:
+              - paragraph [ref=e1970]: JAYAPRAKASH PRAKASH
+              - img [ref=e1971]
+              - paragraph [ref=e1975]: Certified Buyer
+              - paragraph [ref=e1976]: Today
+  - contentinfo [ref=e1977]:
+    - generic [ref=e1979]:
+      - generic [ref=e1980]:
+        - generic [ref=e1981]:
+          - generic [ref=e1982]: ABOUT
+          - link "Contact Us" [ref=e1983] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1984] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1985] [cursor=pointer]:
+            - /url: https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f
+          - link "Flipkart Stories" [ref=e1986] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1987] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1988] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1989]:
+          - generic [ref=e1990]: GROUP COMPANIES
+          - link "Myntra" [ref=e1991] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1992] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1993] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1994]:
+          - generic [ref=e1995]: HELP
+          - link "Payments" [ref=e1996] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1997] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1998] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1999] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e2000]:
+          - generic [ref=e2001]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e2002] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e2003] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e2004] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e2005] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e2006] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e2007] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e2008] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e2009] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e2011]:
+          - generic [ref=e2012]: "Mail Us:"
+          - generic [ref=e2015]:
+            - paragraph [ref=e2016]: Flipkart Internet Private Limited,
+            - paragraph [ref=e2017]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e2018]: Clove Embassy Tech Village,
+            - paragraph [ref=e2019]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e2020]: Bengaluru, 560103,
+            - paragraph [ref=e2021]: Karnataka, India
+          - generic [ref=e2022]: Social
+          - generic [ref=e2023]:
+            - link [ref=e2025] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e2026]
+            - link [ref=e2028] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e2029]
+            - link [ref=e2031] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e2032]
+            - link [ref=e2034] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e2035]
+        - generic [ref=e2037]:
+          - generic [ref=e2038]: "Registered Office Address:"
+          - generic [ref=e2041]:
+            - paragraph [ref=e2042]: Flipkart Internet Private Limited,
+            - paragraph [ref=e2043]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e2044]: Clove Embassy Tech Village,
+            - paragraph [ref=e2045]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e2046]: Bengaluru, 560103,
+            - paragraph [ref=e2047]: Karnataka, India
+            - paragraph [ref=e2048]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e2049]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e2050] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e2051] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e2053]:
+        - generic [ref=e2054]:
+          - img [ref=e2055]
+          - link "Become a Seller" [ref=e2056] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e2057]:
+          - img [ref=e2058]
+          - link "Advertise" [ref=e2059] [cursor=pointer]:
+            - /url: https://brands.flipkart.com
+        - generic [ref=e2060]:
+          - img [ref=e2061]
+          - link "Gift Cards" [ref=e2062] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e2063]:
+          - img [ref=e2064]
+          - link "Help Center" [ref=e2065] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e2066]: © 2007-2026 Flipkart.com
+        - img [ref=e2067]
+```

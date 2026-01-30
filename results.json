@@ -47,8 +47,24 @@
         "metadata": {
           "actualWorkers": 1
         },
-        "id": "Microsoft Edge",
-        "name": "Microsoft Edge",
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/LearnPlaywrightB33/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.js/"
+        ],
+        "timeout": 40000
+      },
+      {
+        "outputDir": "D:/LearnPlaywrightB33/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
         "testDir": "D:/LearnPlaywrightB33/tests",
         "testIgnore": [],
         "testMatch": [
@@ -60,56 +76,121 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "WWE\\iframes.spec.js",
-      "file": "WWE/iframes.spec.js",
+      "title": "login.setup.js",
+      "file": "login.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authentication",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15334,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T04:44:59.546Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login.setup.js-authentication-setup\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login.setup.js-authentication-setup\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB33\\test-results\\login.setup.js-authentication-setup\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ef016cc2fd2715a8e9b-8a50c44886b0aa61c824",
+          "file": "login.setup.js",
+          "line": 4,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "testwithoutlogin.spec.js",
+      "file": "testwithoutlogin.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Automation - Working With Elements",
-          "file": "WWE/iframes.spec.js",
-          "line": 2,
+          "title": "Validate Orange HRM Login functionality with SessionStorage",
+          "file": "testwithoutlogin.spec.js",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "Working with Iframes nested ",
+              "title": "Add Employee ",
               "ok": true,
-              "tags": [
-                "smoke",
-                "raju"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 40000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Microsoft Edge",
-                  "projectName": "Microsoft Edge",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12949,
+                      "duration": 20777,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-29T05:27:14.205Z",
+                      "startTime": "2026-01-30T04:45:17.353Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\LearnPlaywrightB33\\test-results\\WWE-iframes-Automation---W-5ab59-orking-with-Iframes-nested--Microsoft-Edge\\test-finished-1.png"
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--c24d2-essionStorage-Add-Employee--Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--c24d2-essionStorage-Add-Employee--Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--c24d2-essionStorage-Add-Employee--Google-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -117,10 +198,160 @@
                   "status": "expected"
                 }
               ],
-              "id": "cd2075e3382a2e8610af-3e3bfc617fb464b19610",
-              "file": "WWE/iframes.spec.js",
-              "line": 24,
-              "column": 5
+              "id": "4cd34ac8847e4a48a67d-4effc57c6d8a8dfd466d",
+              "file": "testwithoutlogin.spec.js",
+              "line": 6,
+              "column": 11
+            },
+            {
+              "title": "Add job title ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13562,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T04:45:39.477Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--6b5f5-ssionStorage-Add-job-title--Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--6b5f5-ssionStorage-Add-job-title--Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--6b5f5-ssionStorage-Add-job-title--Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-f4c6390038cb1a450a73",
+              "file": "testwithoutlogin.spec.js",
+              "line": 18,
+              "column": 12
+            },
+            {
+              "title": "Buzz post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8742,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T04:45:53.484Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--edc98-th-SessionStorage-Buzz-post-Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--edc98-th-SessionStorage-Buzz-post-Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--edc98-th-SessionStorage-Buzz-post-Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-4ef43025cbee458d2fb3",
+              "file": "testwithoutlogin.spec.js",
+              "line": 37,
+              "column": 9
+            },
+            {
+              "title": "Attendance post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9460,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T04:46:02.287Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--a1aa2-sionStorage-Attendance-post-Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--a1aa2-sionStorage-Attendance-post-Google-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB33\\test-results\\testwithoutlogin-Validate--a1aa2-sionStorage-Attendance-post-Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-144ffdb5f680d2bd49c0",
+              "file": "testwithoutlogin.spec.js",
+              "line": 44,
+              "column": 9
             }
           ]
         }
@@ -129,9 +360,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-29T05:27:09.030Z",
-    "duration": 18375.02100000065,
-    "expected": 1,
+    "startTime": "2026-01-30T04:44:57.918Z",
+    "duration": 74409.66,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

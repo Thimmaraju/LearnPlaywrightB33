@@ -28,8 +28,13 @@ test('drag and drop- example13', async ({ page }) => {
      const targetPlateItems = await page.locator('#plate-items');
 
     await sourceFriedChicken.dragTo(targetPlateItems);
+
+    await page.locator('#plate').screenshot({path : "tests/dragndrop/option1.jpg"})
     await sourceHamburger.dragTo(targetPlateItems);
+
+    await page.locator('#plate').screenshot({path : "tests/dragndrop/option2.jpg"})
     await sourceIceCream.dragTo(targetPlateItems);
+    await page.locator('#plate').screenshot({path : "tests/dragndrop/option3.jpg"})
     // // await page.waitForTimeout(5000)
 
 })

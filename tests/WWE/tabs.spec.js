@@ -6,7 +6,7 @@ test.describe('Automation - Working With Elements', () => {
 
     await page.goto('https://the-internet.herokuapp.com/windows');
 
-    const [newTab] = await Promise.all([
+    const [newwindow] = await Promise.all([
       page.waitForEvent('popup'),
       page.click('//a[normalize-space()="Click Here"]')
     ]);
@@ -14,11 +14,11 @@ test.describe('Automation - Working With Elements', () => {
     // console.log(newTab.url());
     // expect(await newTab.title()).toBe('New Window');
 
-    const textvalue = await newTab.locator('.example>h3').textContent();
+    const textvalue = await newwindow.locator('.example>h3').textContent();
 
     console.log("Text on new page:", textvalue);
 
-    await expect(await newTab.title()).toBe('New Window');
+    await expect(await newwindow.title()).toBe('New Window');
 
     await page.waitForTimeout(5000)
   });
@@ -52,7 +52,7 @@ test.describe('Automation - Working With Elements', () => {
 
     await page.goto('https://www.flipkart.com/');
 
-    await page.locator('input[name="q"]').fill("Laptop Dell")
+    await page.locator('input[name="q"]').first().fill("Vivo 5g Mobiles")
 
     //await page.locator('input[name="q"]').press('Enter')
 
@@ -61,14 +61,15 @@ test.describe('Automation - Working With Elements', () => {
 
     const [newwindow] = await Promise.all([
       page.waitForEvent('popup'),
-      await page.locator('(//div[@class="KzDlHZ"])[1]').click()
+      await page.locator('(//div[@class="RG5Slk"])[1]').click()
      
     ]);
 
    
-    await newwindow.locator("//button[@class='QqFHMw vslbG+ In9uk2']").click()
+    await newwindow.locator('//button[@class="dSM5Ub ugg2XR KCQxN7 KcXDCU"]').click()
+    //await newwindow.locator("//button[@class='dSM5Ub ugg2XR IUmgrZ']").dispatchEvent('click');
 
-   await page.locator('(//div[@class="KzDlHZ"])[2]').click()
+   //await page.locator('(//div[@class="KzDlHZ"])[2]').click()
 
   })
 
