@@ -1,0 +1,66 @@
+{
+  data: [
+    {
+      empNumber: 172,
+      lastName: 'Tester',
+      firstName: 'Albert',
+      middleName: '',
+      employeeId: '508721',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 178,
+      lastName: 'Tester',
+      firstName: 'Albert',
+      middleName: '',
+      employeeId: '500923',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 179,
+      lastName: 'h',
+      firstName: 'aylan',
+      middleName: '',
+      employeeId: '0382',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 181,
+      lastName: 'Test',
+      firstName: 'Custom',
+      middleName: 'Field',
+      employeeId: '0383',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 169,
+      lastName: 'Heller',
+      firstName: 'Evelyn',
+      middleName: '',
+      employeeId: '0372',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    }
+  ],
+  meta: { total: 54 },
+  rels: []
+}

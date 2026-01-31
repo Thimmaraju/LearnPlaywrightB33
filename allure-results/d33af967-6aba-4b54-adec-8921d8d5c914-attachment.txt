@@ -1,0 +1,66 @@
+{
+  data: [
+    {
+      empNumber: 204,
+      lastName: 'perera',
+      firstName: 'amal',
+      middleName: '',
+      employeeId: null,
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 203,
+      lastName: 'User',
+      firstName: 'Auto',
+      middleName: 'Redirect',
+      employeeId: '0405',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 7,
+      lastName: 'user',
+      firstName: 'manda',
+      middleName: 'akhil',
+      employeeId: 'muser',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 162,
+      lastName: 'Thampi',
+      firstName: 'Shivaduth',
+      middleName: 'S',
+      employeeId: '03660447',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    },
+    {
+      empNumber: 89,
+      lastName: 'selvi',
+      firstName: 'siva',
+      middleName: 'kumar',
+      employeeId: '0303',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    }
+  ],
+  meta: { total: 22 },
+  rels: []
+}

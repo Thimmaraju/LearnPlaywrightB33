@@ -1,0 +1,12 @@
+{
+  data: {
+    empNumber: 221,
+    lastName: 'Reichel',
+    firstName: 'Seamus',
+    middleName: 'xyz',
+    employeeId: 'ImVsj',
+    terminationId: null
+  },
+  meta: [],
+  rels: []
+}
