@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -44,9 +42,7 @@
         "outputDir": "D:/LearnPlaywrightB33/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "setup",
         "name": "setup",
         "testDir": "D:/LearnPlaywrightB33/tests",
@@ -54,15 +50,13 @@
         "testMatch": [
           "/.*\\.setup\\.js/"
         ],
-        "timeout": 40000
+        "timeout": 50000
       },
       {
         "outputDir": "D:/LearnPlaywrightB33/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "Google Chrome",
         "name": "Google Chrome",
         "testDir": "D:/LearnPlaywrightB33/tests",
@@ -70,18 +64,46 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 40000
+        "timeout": 50000
       }
     ],
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
+    {
+      "title": "login.setup.js",
+      "file": "login.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authentication",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ef016cc2fd2715a8e9b-8a50c44886b0aa61c824",
+          "file": "login.setup.js",
+          "line": 4,
+          "column": 6
+        }
+      ]
+    },
     {
       "title": "APItests\\getallemployees.spec.js",
       "file": "APItests/getallemployees.spec.js",
@@ -89,77 +111,3619 @@
       "line": 0,
       "specs": [
         {
-          "title": "Verify POST API - Create  Employee",
-          "ok": false,
+          "title": "Verify GET API - get all Employees ",
+          "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 40000,
+              "timeout": 50000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "Google Chrome",
               "projectName": "Google Chrome",
-              "results": [
-                {
-                  "workerIndex": 13,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 1274,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Raju\"\u001b[39m\nReceived: \u001b[31m\"Marcus\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Raju\"\u001b[39m\nReceived: \u001b[31m\"Marcus\"\u001b[39m\n    at D:\\LearnPlaywrightB33\\tests\\APItests\\getallemployees.spec.js:49:46",
-                    "location": {
-                      "file": "D:\\LearnPlaywrightB33\\tests\\APItests\\getallemployees.spec.js",
-                      "column": 46,
-                      "line": 49
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m     expect(createEmployee\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\n \u001b[90m 48 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mfirstName)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Raju\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mlastName)\u001b[33m.\u001b[39mtoBe(payload\u001b[33m.\u001b[39mlastName)\n \u001b[90m 51 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39memployeeId)\u001b[33m.\u001b[39mtoBe(payload\u001b[33m.\u001b[39memployeeId)\n \u001b[90m 52 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB33\\tests\\APItests\\getallemployees.spec.js",
-                        "column": 46,
-                        "line": 49
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Raju\"\u001b[39m\nReceived: \u001b[31m\"Marcus\"\u001b[39m\n\n\u001b[0m \u001b[90m 47 |\u001b[39m     expect(createEmployee\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\n \u001b[90m 48 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mfirstName)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Raju\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mlastName)\u001b[33m.\u001b[39mtoBe(payload\u001b[33m.\u001b[39mlastName)\n \u001b[90m 51 |\u001b[39m     expect(responsecreateemp\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39memployeeId)\u001b[33m.\u001b[39mtoBe(payload\u001b[33m.\u001b[39memployeeId)\n \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB33\\tests\\APItests\\getallemployees.spec.js:49:46\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "{\n  data: {\n    empNumber: \u001b[33m233\u001b[39m,\n    lastName: \u001b[32m'Prohaska'\u001b[39m,\n    firstName: \u001b[32m'Marcus'\u001b[39m,\n    middleName: \u001b[32m'xyz'\u001b[39m,\n    employeeId: \u001b[32m'BjMXo'\u001b[39m,\n    terminationId: \u001b[1mnull\u001b[22m\n  },\n  meta: [],\n  rels: []\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-31T04:52:07.935Z",
-                  "annotations": [],
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\LearnPlaywrightB33\\tests\\APItests\\getallemployees.spec.js",
-                    "column": 46,
-                    "line": 49
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "798ab994a4fc735fcb47-34f49821f3eafc637403",
+          "file": "APItests/getallemployees.spec.js",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Verify POST API - Create  Employee",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "798ab994a4fc735fcb47-7bb80ddbf8c56d6b442c",
           "file": "APItests/getallemployees.spec.js",
           "line": 29,
           "column": 5
+        },
+        {
+          "title": "Verify GET API - GEt all  Users ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "798ab994a4fc735fcb47-8e1283560df579d24336",
+          "file": "APItests/getallemployees.spec.js",
+          "line": 56,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "buzz.spec.js",
+      "file": "buzz.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Add Buzz Post with Valid Text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "53865d5e34ba9c4de6e7-81b3a9afc153d9888378",
+          "file": "buzz.spec.js",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "Add Multiple Buzz Posts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "53865d5e34ba9c4de6e7-463744bddcb939cd7ca2",
+          "file": "buzz.spec.js",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "Add Buzz Post with Congratulations Message",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "53865d5e34ba9c4de6e7-ebe31dc5e9bc4b019ded",
+          "file": "buzz.spec.js",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "Verify Buzz Post appears in Feed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "53865d5e34ba9c4de6e7-48eb7600434c4ffa7b58",
+          "file": "buzz.spec.js",
+          "line": 44,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\admin\\addjobtitle.spec.js",
+      "file": "Legacy/admin/addjobtitle.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Job title functionality",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "34041f49ea7ffb0b7799-585a35171a4777d43344",
+          "file": "Legacy/admin/addjobtitle.spec.js",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\conditionaltestex2.spec.js",
+      "file": "Legacy/conditionaltestex2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Based on BrowserName run different script",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "2d63bea6d543a839e8bd-1e05a69866b4f97fda56",
+          "file": "Legacy/conditionaltestex2.spec.js",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Based on BrowserName run different script - don env ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "2d63bea6d543a839e8bd-bf210b4cde6536cb1653",
+          "file": "Legacy/conditionaltestex2.spec.js",
+          "line": 42,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\conditionaltestex3.spec.js",
+      "file": "Legacy/conditionaltestex3.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Skip test for specific browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-2714316e09681525df1e",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Run only on Firefox",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-9fcc8a01201bcea51319",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Platform-specific navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-25cd4870517e1dd6d7c7",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "Select test data based on environment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-58e833e5f63074211db1",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "Conditional element visibility check",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-7638c0ce5b73c570dca7",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 58,
+          "column": 5
+        },
+        {
+          "title": "Admin panel test - QA only",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-83815692f82b9def5df7",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "Execute based on browser AND environment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-9c2c427de8cb0705e06c",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "Different assertions for different browsers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-bb4a482a20d37f6e13ec",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "Retry based on browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-2b0f814c1bf70611431f",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 102,
+          "column": 5
+        },
+        {
+          "title": "Browser-specific button click verification",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "08222254c4d792b31d48-9ab987d4c1cea042d511",
+          "file": "Legacy/conditionaltestex3.spec.js",
+          "line": 112,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\conditionaltests.spec.js",
+      "file": "Legacy/conditionaltests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Click one of the elements that is visible out of two",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "49897f363deb812fb501-c653dd85c18f5526fc58",
+          "file": "Legacy/conditionaltests.spec.js",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "Click one of the elements that is present out of two",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "49897f363deb812fb501-a770f362abe98070cf00",
+          "file": "Legacy/conditionaltests.spec.js",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "Based on BrowserName skip",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "49897f363deb812fb501-a3f3790e78aceb838b49",
+          "file": "Legacy/conditionaltests.spec.js",
+          "line": 47,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\datadrivenarray.spec.js",
+      "file": "Legacy/datadrivenarray.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Job title functionality - QA Analyst II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5f04766aa6e37af3cb90-67017c738b21cc874c35",
+          "file": "Legacy/datadrivenarray.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - SDET II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5f04766aa6e37af3cb90-d39dcef1205072a860be",
+          "file": "Legacy/datadrivenarray.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - Software test Engineer II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5f04766aa6e37af3cb90-5c2b3ec798da2a7f9ee0",
+          "file": "Legacy/datadrivenarray.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - QA Engineer II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5f04766aa6e37af3cb90-1cb4d71dbebec1fb1b0e",
+          "file": "Legacy/datadrivenarray.spec.js",
+          "line": 12,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\datadrivenarray2.spec.js",
+      "file": "Legacy/datadrivenarray2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Job title functionality - QA Analyst II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8fda35420f96147bb09a-bb14b74944def7edddaa",
+          "file": "Legacy/datadrivenarray2.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - SDET II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8fda35420f96147bb09a-e2e071123ebae37944d7",
+          "file": "Legacy/datadrivenarray2.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - Software test Engineer II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8fda35420f96147bb09a-e82536e52b8692f6e9d9",
+          "file": "Legacy/datadrivenarray2.spec.js",
+          "line": 12,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - QA Engineer II",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8fda35420f96147bb09a-21d2b3a540167a66c0ae",
+          "file": "Legacy/datadrivenarray2.spec.js",
+          "line": 12,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\datadriventestingex.spec.js",
+      "file": "Legacy/datadriventestingex.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Job title functionality - QA Analyst I",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "23e63c5bd89337390f64-37aa62c7e99ef2eec74f",
+          "file": "Legacy/datadriventestingex.spec.js",
+          "line": 18,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - SDET I",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "23e63c5bd89337390f64-dfb0d2a776b207dcfd2c",
+          "file": "Legacy/datadriventestingex.spec.js",
+          "line": 18,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - Software test Engineer I",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "23e63c5bd89337390f64-7331bcd5fe03126f0bf8",
+          "file": "Legacy/datadriventestingex.spec.js",
+          "line": 18,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Job title functionality - QA Engineer I",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "23e63c5bd89337390f64-5343f1bd38440b92a333",
+          "file": "Legacy/datadriventestingex.spec.js",
+          "line": 18,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\datadriventestingex2.spec.js",
+      "file": "Legacy/datadriventestingex2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Employee functionality - Raju",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ae19fd41084ef2ec1992-f837fd1e2b45832b7f1b",
+          "file": "Legacy/datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Employee functionality - Lakshmi",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ae19fd41084ef2ec1992-268d214b95a0fee9fb14",
+          "file": "Legacy/datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
+        },
+        {
+          "title": "Verify Add Employee functionality - Praveen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ae19fd41084ef2ec1992-1fd9bcf9c0e388123ace",
+          "file": "Legacy/datadriventestingex2.spec.js",
+          "line": 21,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\demoqatest.spec.js",
+      "file": "Legacy/demoqatest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "verify Edit boxes",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a55ea7134fb1897abb48-8b38237725594e66e030",
+          "file": "Legacy/demoqatest.spec.js",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "dummy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a55ea7134fb1897abb48-243da4e1b4760cb133ff",
+          "file": "Legacy/demoqatest.spec.js",
+          "line": 31,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\getallvaluestoArary.spec.js",
+      "file": "Legacy/getallvaluestoArary.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify menu items ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "06e456466e0d35c6db78-bf0fbfc5a05f75c208a1",
+          "file": "Legacy/getallvaluestoArary.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\grouping.spec.js",
+      "file": "Legacy/grouping.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "test suite name  - group 1",
+          "file": "Legacy/grouping.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test case1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-d68ac238478d4adeb793",
+              "file": "Legacy/grouping.spec.js",
+              "line": 6,
+              "column": 9
+            },
+            {
+              "title": "test case2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-377fd64eef474b70fa9e",
+              "file": "Legacy/grouping.spec.js",
+              "line": 16,
+              "column": 9
+            },
+            {
+              "title": "test case3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-8a3387568136a9edb500",
+              "file": "Legacy/grouping.spec.js",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "test case4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-f6b798e7d19446b66e11",
+              "file": "Legacy/grouping.spec.js",
+              "line": 28,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "test suite name  - group 2",
+          "file": "Legacy/grouping.spec.js",
+          "line": 36,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test case5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-564a2f396b14b0b0143a",
+              "file": "Legacy/grouping.spec.js",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "test case6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-2b54190fd8411eae0694",
+              "file": "Legacy/grouping.spec.js",
+              "line": 45,
+              "column": 9
+            },
+            {
+              "title": "test case7",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-14b7342b6472267bbc6e",
+              "file": "Legacy/grouping.spec.js",
+              "line": 51,
+              "column": 9
+            },
+            {
+              "title": "test case8",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fa3af16d75d762d42f32-41457547c9fa6fb4d05e",
+              "file": "Legacy/grouping.spec.js",
+              "line": 57,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\hooks.spec.js",
+      "file": "Legacy/hooks.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Group 1",
+          "file": "Legacy/hooks.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test case1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c44b6462b812c397c7-f108428706aef555b3b0",
+              "file": "Legacy/hooks.spec.js",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": "test case2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c44b6462b812c397c7-53761a69b0133bf60f7d",
+              "file": "Legacy/hooks.spec.js",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "test case3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c44b6462b812c397c7-78170b0c05053a3d2824",
+              "file": "Legacy/hooks.spec.js",
+              "line": 52,
+              "column": 9
+            },
+            {
+              "title": "test case4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c44b6462b812c397c7-5b49cb18fd5055c46c6c",
+              "file": "Legacy/hooks.spec.js",
+              "line": 60,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "group 2",
+          "file": "Legacy/hooks.spec.js",
+          "line": 73,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test case5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c44b6462b812c397c7-a748e153a3973ceb011e",
+              "file": "Legacy/hooks.spec.js",
+              "line": 75,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\login.spec.js",
+      "file": "Legacy/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login functionality ",
+          "file": "Legacy/login.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify logo visibility",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-59a8a83add3b5ea3d49d",
+              "file": "Legacy/login.spec.js",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "Verify login with valid credentials",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "important"
+              ],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-0912f5ed8f06d294badc",
+              "file": "Legacy/login.spec.js",
+              "line": 30,
+              "column": 9
+            },
+            {
+              "title": "Verify login valid Username and Invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-404c9f7e40ee3dd7790a",
+              "file": "Legacy/login.spec.js",
+              "line": 52,
+              "column": 9
+            },
+            {
+              "title": "Verify login invalid Username and valid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-634d4919d9948b3cf2c3",
+              "file": "Legacy/login.spec.js",
+              "line": 68,
+              "column": 9
+            },
+            {
+              "title": "Verify login invalid Username and invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-93c63bb612ad3c0a0a7b",
+              "file": "Legacy/login.spec.js",
+              "line": 84,
+              "column": 9
+            },
+            {
+              "title": "Verify login with blank fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\Legacy\\login.spec.js",
+                        "line": 102,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-4dafc5695e3e27a6a318",
+              "file": "Legacy/login.spec.js",
+              "line": 102,
+              "column": 10
+            },
+            {
+              "title": "Verify login with SQL injection attempt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-898b827f3436dd65f3fd",
+              "file": "Legacy/login.spec.js",
+              "line": 120,
+              "column": 9
+            },
+            {
+              "title": "Verify login with special characters in credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-1461f6b1decf5529ef03",
+              "file": "Legacy/login.spec.js",
+              "line": 128,
+              "column": 9
+            },
+            {
+              "title": "Verify login with whitespace in username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-7d09c0bdd3acfff6d0e2",
+              "file": "Legacy/login.spec.js",
+              "line": 136,
+              "column": 9
+            },
+            {
+              "title": "Verify login with case sensitivity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "100aad1c57f9d96d031b-611399eba9e296190d5e",
+              "file": "Legacy/login.spec.js",
+              "line": 144,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\loginautopractice.spec.js",
+      "file": "Legacy/loginautopractice.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Login to Automation Practice site ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a9018eb47e4b6215d887-ce6ab247cf97efa66fe9",
+          "file": "Legacy/loginautopractice.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\notusage.spec.js",
+      "file": "Legacy/notusage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify check box selection",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "4696c27ff72f06011968-bfce1c88b3861b82b0be",
+          "file": "Legacy/notusage.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\PIM\\addemployee.spec.js",
+      "file": "Legacy/PIM/addemployee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Employee functionality ",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d3638ea35b66a7b4377e-1eedce13af22061bf8ba",
+          "file": "Legacy/PIM/addemployee.spec.js",
+          "line": 12,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\PIM\\example.spec.js",
+      "file": "Legacy/PIM/example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "616b39b3cd6ddf48fa95-43f7300c2f07c311fb9e",
+          "file": "Legacy/PIM/example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "616b39b3cd6ddf48fa95-c7523f89470d904d9388",
+          "file": "Legacy/PIM/example.spec.js",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\PIM\\functionex.spec.js",
+      "file": "Legacy/PIM/functionex.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Register flow ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d74bce72a79486399f77-a992858dea8102db010a",
+          "file": "Legacy/PIM/functionex.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\redif_register.spec.js",
+      "file": "Legacy/redif_register.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Register flow ",
+          "ok": true,
+          "tags": [
+            "important"
+          ],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "762ebbe1fdf7d6945a87-8e95d119094c4c048f07",
+          "file": "Legacy/redif_register.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\sample.spec.js",
+      "file": "Legacy/sample.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify menu items ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "b0ea902fbf5a8f3b932c-5bc88192857943cadd7f",
+          "file": "Legacy/sample.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\softharassertions.spec.js",
+      "file": "Legacy/softharassertions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e425a0b64cf6c64a22a5-bc66f19bc8e536f2ba32",
+          "file": "Legacy/softharassertions.spec.js",
+          "line": 4,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\stringsex.spec.js",
+      "file": "Legacy/stringsex.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get the String from DOM ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d890589c4cb8d795e37b-d2d5be8cdb287dcb2026",
+          "file": "Legacy/stringsex.spec.js",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Verify total price  - cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d890589c4cb8d795e37b-ee3a27ff55cd04e53f78",
+          "file": "Legacy/stringsex.spec.js",
+          "line": 31,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\swaglabs.spec.js",
+      "file": "Legacy/swaglabs.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Page Header ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-dcdcee930eb3b9a73277",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Verify login to Swaglabs using valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-10b653539e88cd442fad",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "Verify login to Swaglabs using Invalid Username  ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-80446d3692a92159641a",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "Verify login to Swaglabs using Invalid password ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-733d8e19be9b96137855",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "title": "Verify login to Swaglabs using Both  Invalid ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-c53ae6c7061f20778e5c",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "Verify login to Swaglabs using Locked out User  ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fa83819f1411b17fda97-cf5390e913b607bf44dc",
+          "file": "Legacy/swaglabs.spec.js",
+          "line": 42,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Legacy\\test.spec.js",
+      "file": "Legacy/test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test case 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4cc2634cfe542259c5d-90b93bbf73d38fa58e9a",
+          "file": "Legacy/test.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "test case 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4cc2634cfe542259c5d-75c403ebc29fae66cb08",
+          "file": "Legacy/test.spec.js",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "test case 3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4cc2634cfe542259c5d-f7d28fee2227e5a60c9e",
+          "file": "Legacy/test.spec.js",
+          "line": 15,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify login with Valid Credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-45f4a2b47124eab5d245",
+          "file": "login.spec.js",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "Verify login with Valid username and Invalid Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-a800ac5b06eacff3a783",
+          "file": "login.spec.js",
+          "line": 23,
+          "column": 5
+        },
+        {
+          "title": "Verify login with INValid username and valid Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-92464ed05dd83b44b7d1",
+          "file": "login.spec.js",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "title": "Verify login with INValid username and Invalid Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-f8a4cb81ce1a4c4c3a25",
+          "file": "login.spec.js",
+          "line": 39,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "PIM\\addemployee.spec.js",
+      "file": "PIM/addemployee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify add Employee with Madatory Details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ec552fad52c4a8fd0817-f189129f9d11cf40d99d",
+          "file": "PIM/addemployee.spec.js",
+          "line": 25,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "swaglogintest.spec.js",
+      "file": "swaglogintest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Swag Labs Login Tests",
+          "file": "swaglogintest.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Page Header",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8206cccaa4726b3bbdba-4275d189443159a0e82c",
+              "file": "swaglogintest.spec.js",
+              "line": 14,
+              "column": 7
+            }
+          ],
+          "suites": [
+            {
+              "title": "Login with different credentials",
+              "file": "swaglogintest.spec.js",
+              "line": 18,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Verify login to Swaglabs Valid Credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 50000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Google Chrome",
+                      "projectName": "Google Chrome",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-2b78febca2965dcd51f4",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Invalid Username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 50000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Google Chrome",
+                      "projectName": "Google Chrome",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-f92dda0d484585ea6c29",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Invalid Password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 50000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Google Chrome",
+                      "projectName": "Google Chrome",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-9da9f06f6f65e9ad7509",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Both Invalid Credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 50000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Google Chrome",
+                      "projectName": "Google Chrome",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-61391748081fe2771e3d",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                },
+                {
+                  "title": "Verify login to Swaglabs Locked Out User",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 50000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Google Chrome",
+                      "projectName": "Google Chrome",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "8206cccaa4726b3bbdba-dc43fd151b928ee2119d",
+                  "file": "swaglogintest.spec.js",
+                  "line": 20,
+                  "column": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "testwithoutlogin.spec.js",
+      "file": "testwithoutlogin.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Validate Orange HRM Login functionality with SessionStorage",
+          "file": "testwithoutlogin.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add Employee ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-4effc57c6d8a8dfd466d",
+              "file": "testwithoutlogin.spec.js",
+              "line": 6,
+              "column": 11
+            },
+            {
+              "title": "Add job title ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-f4c6390038cb1a450a73",
+              "file": "testwithoutlogin.spec.js",
+              "line": 18,
+              "column": 12
+            },
+            {
+              "title": "Buzz post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-4ef43025cbee458d2fb3",
+              "file": "testwithoutlogin.spec.js",
+              "line": 37,
+              "column": 9
+            },
+            {
+              "title": "Attendance post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cd34ac8847e4a48a67d-144ffdb5f680d2bd49c0",
+              "file": "testwithoutlogin.spec.js",
+              "line": 44,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "textbox.spec.js",
+      "file": "textbox.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DemoQA Text Box Tests",
+          "file": "textbox.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_001: Fill and Submit Text Box Form with Valid Data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c6b6b82069eee7fc93a4-0fea98e08494ebbd9bd1",
+              "file": "textbox.spec.js",
+              "line": 13,
+              "column": 8
+            },
+            {
+              "title": "TC_002: Verify Form with Different Valid Data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c6b6b82069eee7fc93a4-e58cadaba1a38e1979ed",
+              "file": "textbox.spec.js",
+              "line": 33,
+              "column": 8
+            },
+            {
+              "title": "TC_003: Submit with Mandatory Fields Only (Email)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c6b6b82069eee7fc93a4-baacfa1d5f28cfd467db",
+              "file": "textbox.spec.js",
+              "line": 53,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\alerts.spec.js",
+      "file": "WWE/alerts.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working with Alerts",
+          "file": "WWE/alerts.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Playwright Test Case - Simple Alert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e00e77eaa7cbd04458a1-42e58d5d121ece08c528",
+              "file": "WWE/alerts.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Playwright Test Case - test Confirm Alert - OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e00e77eaa7cbd04458a1-7852b2d2617cb53a8ede",
+              "file": "WWE/alerts.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "Playwright Test Case - test Confirm Alert - Cancel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e00e77eaa7cbd04458a1-fd27c6454d8010d0aa3b",
+              "file": "WWE/alerts.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "Playwright Test Case - test prompt Alert - Ok",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e00e77eaa7cbd04458a1-b0c3529d37b62c8e9112",
+              "file": "WWE/alerts.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "Playwright Test Case - test prompt Alert - Cancel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e00e77eaa7cbd04458a1-cd922fa4ae162cfbb29b",
+              "file": "WWE/alerts.spec.js",
+              "line": 58,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\button.spec.js",
+      "file": "WWE/button.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Button Tests",
+          "file": "WWE/button.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should render the button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9d72ae4e7ebf56095c3a-2880e2a3ec968ae308b9",
+              "file": "WWE/button.spec.js",
+              "line": 4,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\buttonNEditbox.spec.js",
+      "file": "WWE/buttonNEditbox.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify clicking on Hidden element ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c92123fd7d4be0bf0eb0-69f9596fcc658abc941d",
+          "file": "WWE/buttonNEditbox.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Verify clicking on Edit box element ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c92123fd7d4be0bf0eb0-5c0329d4c7a1fae4f499",
+          "file": "WWE/buttonNEditbox.spec.js",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "WWE\\calendar.spec.js",
+      "file": "WWE/calendar.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Calendar Feature",
+          "file": "WWE/calendar.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display the calendar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "81997deded7345502bdb-fce91be0d7f13fd56d26",
+              "file": "WWE/calendar.spec.js",
+              "line": 6,
+              "column": 5
+            },
+            {
+              "title": "Nested Iframes ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "81997deded7345502bdb-3ebb3cbe7d07f3455864",
+              "file": "WWE/calendar.spec.js",
+              "line": 38,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\checkbox.spec.js",
+      "file": "WWE/checkbox.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Cehck box example 1 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fcb1227d6d47bdb0bc88-2786dbf6534cfc91ef56",
+          "file": "WWE/checkbox.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Cehck box example 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fcb1227d6d47bdb0bc88-e6a7191ccec55686d872",
+          "file": "WWE/checkbox.spec.js",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "Cehck box example 3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fcb1227d6d47bdb0bc88-d7011995a72fe3f561a9",
+          "file": "WWE/checkbox.spec.js",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "Calendar 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fcb1227d6d47bdb0bc88-83de83c3c616611dd452",
+          "file": "WWE/checkbox.spec.js",
+          "line": 66,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "WWE\\dragNdrop.spec.js",
+      "file": "WWE/dragNdrop.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "drag and drop- example13",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1b267bf265ff9e665f2e-610f978b24a397bbe354",
+          "file": "WWE/dragNdrop.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "WWE\\dropdowns.spec.js",
+      "file": "WWE/dropdowns.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Drop down example 1 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "9134603a645f9a56ce10-dd1c9db9f66ce6a423fc",
+          "file": "WWE/dropdowns.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "WWE\\fileupload.spec.js",
+      "file": "WWE/fileupload.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "should add a new employee successfully - with path1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a429e40d1abdc97802d0-c1fa8022a0c398cd4233",
+          "file": "WWE/fileupload.spec.js",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "should add a new employee successfully - with path2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a429e40d1abdc97802d0-86571216722bc80cd6c9",
+          "file": "WWE/fileupload.spec.js",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "WWE\\iframes.spec.js",
+      "file": "WWE/iframes.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Elements",
+          "file": "WWE/iframes.spec.js",
+          "line": 2,
+          "column": 6,
+          "specs": [
+            {
+              "title": "dummy",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cd2075e3382a2e8610af-2f0b5e6af5cf97cb549d",
+              "file": "WWE/iframes.spec.js",
+              "line": 5,
+              "column": 5
+            },
+            {
+              "title": "Working with Iframes",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "raju"
+              ],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cd2075e3382a2e8610af-7a027ff5d4ed49e0f8a9",
+              "file": "WWE/iframes.spec.js",
+              "line": 13,
+              "column": 5
+            },
+            {
+              "title": "Working with Iframes nested ",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "raju"
+              ],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cd2075e3382a2e8610af-63a04f8848f5f0ac6e3e",
+              "file": "WWE/iframes.spec.js",
+              "line": 24,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\links.spec.js",
+      "file": "WWE/links.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Elements",
+          "file": "WWE/links.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Links -example ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4642f290c89efc521792-5581da389de62ba72e98",
+              "file": "WWE/links.spec.js",
+              "line": 5,
+              "column": 6
+            },
+            {
+              "title": "Links -example2 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4642f290c89efc521792-3ab5d0ac9febd3c95ae5",
+              "file": "WWE/links.spec.js",
+              "line": 15,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\newcontext.spec.js",
+      "file": "WWE/newcontext.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Elements",
+          "file": "WWE/newcontext.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "browse context test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "34a8a0c4b68d28cd32bf-89db7bc96cb8e34b77fe",
+              "file": "WWE/newcontext.spec.js",
+              "line": 5,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\Radiobutton.spec.js",
+      "file": "WWE/Radiobutton.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Radio example 1 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8e20b0b04d6e382b40e0-d8db1ea8995063135860",
+          "file": "WWE/Radiobutton.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "WWE\\radiobutton2.spec.js",
+      "file": "WWE/radiobutton2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with Radio button",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3b47d4c26f57b83461cd-ccbb9048560652e94fbe",
+          "file": "WWE/radiobutton2.spec.js",
+          "line": 3,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "WWE\\screenshot.spec.js",
+      "file": "WWE/screenshot.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "21a0c26169b1dc65110d-3e25c0afdeea3a4de219",
+          "file": "WWE/screenshot.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Element screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "21a0c26169b1dc65110d-4dac2a5ab4cabe0f7e48",
+          "file": "WWE/screenshot.spec.js",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "Element screenshot Example 2 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "21a0c26169b1dc65110d-63eeb32b841c8df4e2cc",
+          "file": "WWE/screenshot.spec.js",
+          "line": 20,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "WWE\\scrolling.spec.js",
+      "file": "WWE/scrolling.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "scroll to specific element",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "9e5bd957006537c892ea-869705816dd9e70e1edc",
+          "file": "WWE/scrolling.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "WWE\\shadowDOM.spec.js",
+      "file": "WWE/shadowDOM.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with Shadow DOM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "250858aa1186f1951c9d-74cbf18bfef669e8a18a",
+          "file": "WWE/shadowDOM.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Working with Shadow DOM2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 50000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "250858aa1186f1951c9d-8b9c9759c09151aa2d78",
+          "file": "WWE/shadowDOM.spec.js",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "WWE\\tables.spec.js",
+      "file": "WWE/tables.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Table",
+          "file": "WWE/tables.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Playwright Test Case - table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fee08fa817316b96fa89-e018424da4abb25dfa24",
+              "file": "WWE/tables.spec.js",
+              "line": 6,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\tabs.spec.js",
+      "file": "WWE/tabs.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Elements",
+          "file": "WWE/tabs.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "handle tabs - example 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f869d5434f02cc211304-9f6312d5a5c8db6f284e",
+              "file": "WWE/tabs.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "handle tabs -example 2***",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f869d5434f02cc211304-68c636dfd2e39e3e43f1",
+              "file": "WWE/tabs.spec.js",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "flipkart - verify product display",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f869d5434f02cc211304-a2247068b1163bdafa6b",
+              "file": "WWE/tabs.spec.js",
+              "line": 51,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\text2.spec.js",
+      "file": "WWE/text2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Text2 Suite",
+          "file": "WWE/text2.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "sample test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d345879929b3aca9bd21-94c134382ff819de5003",
+              "file": "WWE/text2.spec.js",
+              "line": 4,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\text3.spec.js",
+      "file": "WWE/text3.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Text2 Suite",
+          "file": "WWE/text3.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "sample test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f41af601edd24b4f991-f7ad5b8e8549ffdc58c1",
+              "file": "WWE/text3.spec.js",
+              "line": 4,
+              "column": 5
+            },
+            {
+              "title": "get all texts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f41af601edd24b4f991-19cfdaf59d2893b33726",
+              "file": "WWE/text3.spec.js",
+              "line": 30,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WWE\\uploadNDownloadfiles.spec.js",
+      "file": "WWE/uploadNDownloadfiles.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation - Working With Elements",
+          "file": "WWE/uploadNDownloadfiles.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Playwright Test Case - upload file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-629fc04e4c42d5e42c73",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 6,
+              "column": 5
+            },
+            {
+              "title": "Playwright Test Case - upload file example 2 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB33\\tests\\WWE\\uploadNDownloadfiles.spec.js",
+                        "line": 24,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-8244d1422235d4981731",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 24,
+              "column": 10
+            },
+            {
+              "title": "Upload Multiple files and assert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-5bb6693619de4b3ec6c0",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "Download a Single file and assert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-8956ae040fa460ae71a7",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 51,
+              "column": 5
+            },
+            {
+              "title": "Download Multiple files and assert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-1914ce302a2448accaf3",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 67,
+              "column": 5
+            },
+            {
+              "title": "Direct Download and assert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-755afe33e4a2603d7b05",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 88,
+              "column": 5
+            },
+            {
+              "title": "Direct Download and assert example 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-1e6320fc7418e548e55d",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 119,
+              "column": 5
+            },
+            {
+              "title": "Verify scrooling ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1f91ff69c8136b4082b5-99768cbe4fbd0fbe4a86",
+              "file": "WWE/uploadNDownloadfiles.spec.js",
+              "line": 152,
+              "column": 5
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-31T04:52:02.690Z",
-    "duration": 6679.4220000000205,
+    "startTime": "2026-02-03T15:43:06.997Z",
+    "duration": 1110.1620000000003,
     "expected": 0,
-    "skipped": 0,
-    "unexpected": 1,
+    "skipped": 150,
+    "unexpected": 0,
     "flaky": 0
   }
 }
